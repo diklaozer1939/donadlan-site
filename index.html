@@ -1,15 +1,333 @@
 <!DOCTYPE html>
-  <html lang="he" dir="rtl">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>דו נדל"ן | דקלה עוזר</title>
-  <style>body{font-family:Arial,sans-serif;background:#fff;color:#333;text-align:center;padding:80px 20px}h1{color:#b8923a}a{color:#b8923a}</style>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>דקלה עוזר | דו נדל"ן – תיווך נדל"ן בכפר גנים, פתח תקווה ובקעת אונו</title>
+<meta name="description" content="דקלה עוזר, מתווכת נדל&quot;ן שגרה בכפר גנים בפתח תקווה. מכירה, קנייה והשכרה של דירות בכפר גנים, קריית אונו, יהוד ואור יהודה. שקיפות מלאה והסכמים בכתב בכל שלב. 055-8836333">
+<link rel="canonical" href="https://donadlan.co.il/">
+<meta property="og:title" content="דקלה עוזר | דו נדל&quot;ן">
+<meta property="og:description" content="תיווך נדל&quot;ן בכפר גנים, פתח תקווה ובקעת אונו. שקיפות מלאה, והכל בכתב.">
+<meta property="og:url" content="https://donadlan.co.il/">
+<meta property="og:locale" content="he_IL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "דו נדל\"ן – דקלה עוזר",
+  "alternateName": ["Do Nadlan", "דקלה עוזר"],
+  "url": "https://donadlan.co.il/",
+  "telephone": "+972-55-883-6333",
+  "address": {"@type": "PostalAddress", "addressLocality": "פתח תקווה", "addressCountry": "IL"},
+  "areaServed": [
+    {"@type": "Place", "name": "כפר גנים ב', פתח תקווה"},
+    {"@type": "Place", "name": "כפר גנים ג', פתח תקווה"},
+    {"@type": "City", "name": "פתח תקווה"},
+    {"@type": "City", "name": "קריית אונו"},
+    {"@type": "City", "name": "יהוד"},
+    {"@type": "City", "name": "אור יהודה"}
+  ],
+  "knowsLanguage": ["he", "en"],
+  "description": "מתווכת נדל\"ן מכפר גנים בפתח תקווה. מכירה, קנייה והשכרה של דירות בפתח תקווה ובבקעת אונו, עם שקיפות מלאה והסכמים בכתב בכל שלב."
+}
+</script>
+<style>
+:root{
+  --gold:#B8923A;
+  --gold-soft:#F6EFDF;
+  --ink:#2B2620;
+  --muted:#6E655A;
+  --line:#E7DFCF;
+  --bg:#FFFFFF;
+  --bg-alt:#FBF8F2;
+  --green:#1F8A4C;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Rubik",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{font-weight:700;font-size:20px;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--gold)}
+nav{display:flex;gap:18px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--gold)}
+.wa-top{background:var(--green);color:#fff;text-decoration:none;padding:8px 14px;border-radius:999px;font-size:15px;white-space:nowrap}
+@media (max-width:720px){nav{display:none}}
+
+/* hero */
+.hero{padding:64px 0 56px;background:linear-gradient(180deg,var(--gold-soft),#fff)}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.2;margin:0 0 14px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:620px;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:500}
+.btn-wa{background:var(--green);color:#fff}
+.btn-ghost{border:1.5px solid var(--gold);color:var(--gold)}
+.areas{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px}
+.areas span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px;color:var(--muted)}
+
+/* sections */
+section{padding:56px 0}
+section.alt{background:var(--bg-alt)}
+h2{font-size:clamp(24px,3.5vw,32px);margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+
+/* filters */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filters button{font:inherit;font-size:15px;border:1px solid var(--line);background:#fff;padding:7px 16px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.filters button.on{background:var(--gold);border-color:var(--gold);color:#fff}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.pic{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#EFE4CB,#FBF6EC);display:flex;align-items:center;justify-content:center}
+.pic img{width:100%;height:100%;object-fit:cover}
+.pic .ph{font-size:46px;opacity:.55}
+.badge{position:absolute;top:12px;right:12px;background:#fff;color:var(--ink);font-size:14px;font-weight:500;padding:4px 12px;border-radius:999px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.badge.done{background:var(--gold);color:#fff}
+.card.closed .pic::after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.35)}
+.body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.loc{font-size:14px;color:var(--gold);font-weight:500}
+.card h3{margin:0;font-size:20px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:15px;color:var(--muted)}
+.feat{display:flex;flex-wrap:wrap;gap:6px}
+.feat span{font-size:13px;background:var(--gold-soft);border-radius:6px;padding:2px 8px}
+.desc{margin:4px 0 0;font-size:16px}
+.card .btn{margin-top:auto;text-align:center;font-size:15px;padding:10px 16px}
+.empty,.loading{color:var(--muted)}
+
+/* testimonials */
+.quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px;position:relative}
+blockquote::before{content:"”";position:absolute;top:-6px;right:16px;font-size:64px;color:var(--gold);line-height:1}
+blockquote p{margin:14px 0 12px}
+blockquote footer{font-size:15px;color:var(--muted)}
+blockquote footer b{color:var(--ink)}
+.more{border:0;background:none;color:var(--gold);font:inherit;font-size:15px;cursor:pointer;padding:0}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr;gap:10px;max-width:680px}
+.about p{margin:0}
+.about .lead{font-size:20px}
+
+/* contact */
+.contact{text-align:center}
+.contact .phone{font-size:28px;font-weight:700;text-decoration:none;display:inline-block;margin:6px 0 18px}
+.contact .btns{justify-content:center}
+.sig{margin-top:22px;color:var(--muted);font-size:15px}
+
+footer.site{border-top:1px solid var(--line);padding:22px 0;font-size:14px;color:var(--muted)}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+.float-wa{position:fixed;bottom:18px;left:18px;z-index:20;background:var(--green);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.2);text-decoration:none}
+.float-wa svg{width:28px;height:28px;fill:#fff}
+</style>
 </head>
-  <body>
-  <h1>דו נדל"ן</h1>
-  <p>האתר בבנייה 🏡</p>
-  <p>דקלה עוזר | <a href="https://wa.me/972558836333">055-8836333</a></p>
-  </body>
-  </html>
-  
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">דו <span>נדל"ן</span></a>
+    <nav>
+      <a href="#properties">נכסים</a>
+      <a href="#reviews">המלצות</a>
+      <a href="#about">עליי</a>
+      <a href="#contact">יצירת קשר</a>
+    </nav>
+    <a class="wa-top" href="https://wa.me/972558836333">וואטסאפ</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>תיווך נדל"ן ב<em>כפר גנים</em><br>ובבקעת אונו</h1>
+    <p>מכירה, קנייה והשכרה של דירות בפתח תקווה, קריית אונו, יהוד ואור יהודה. אני גרה בכפר גנים, וכל שלב אצלי סגור בכתב.</p>
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/972558836333?text=%D7%94%D7%99%D7%99%20%D7%93%D7%A7%D7%9C%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8">דברו איתי בוואטסאפ</a>
+      <a class="btn btn-ghost" href="#properties">לנכסים</a>
+    </div>
+    <div class="areas">
+      <span>כפר גנים ב'</span><span>כפר גנים ג'</span><span>פתח תקווה</span><span>קריית אונו</span><span>יהוד</span><span>אור יהודה</span>
+    </div>
+  </div>
+</div>
+
+<section id="properties">
+  <div class="wrap">
+    <h2>נכסים 🏡</h2>
+    <p class="sub">מחיר ופרטים נוספים, בוואטסאפ. אני עונה בעצמי.</p>
+    <div class="filters" id="filters">
+      <button class="on" data-f="all">הכל</button>
+      <button data-f="sale">למכירה</button>
+      <button data-f="rent">להשכרה</button>
+      <button data-f="closed">נמכרו והושכרו</button>
+    </div>
+    <div class="grid" id="grid"><p class="loading">טוען נכסים...</p></div>
+  </div>
+</section>
+
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <h2>מה אומרים עליי 🤝</h2>
+    <p class="sub">במילים של בעלי דירות שעבדו איתי.</p>
+    <div class="quotes" id="quotes"><p class="loading">טוען...</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <h2>נעים להכיר, אני דקלה 🌸</h2>
+    <p class="lead">אני גרה בכפר גנים, בפתח תקווה.</p>
+    <p>את השכונה אני מכירה לא רק מהמפה, אלא מהגינות, מהמכולת ומהשכנים.</p>
+    <p>אני מלווה מכירה, קנייה והשכרה של דירות בכפר גנים ובבקעת אונו: קריית אונו, יהוד ואור יהודה.</p>
+    <p>חשוב לי שתהיה שקיפות מלאה. כל שלב נסגר בכתב, מראש, כדי שאף אחד לא יופתע בדרך.</p>
+    <p>גרים רחוק מהדירה? זה בסדר. אני מראה אותה, בודקת את המתעניינים, מעדכנת אתכם בכל שלב, וכשמגיעים לחתום, הכל כבר מוכן ✍️</p>
+    <p>אני מאמינה שעסקה טובה מתחילה באמון. ואמון בונים לאורך זמן.</p>
+  </div>
+</section>
+
+<section id="contact" class="alt contact">
+  <div class="wrap">
+    <h2>בואו נדבר 📞</h2>
+    <p class="sub">רוצים למכור, לקנות או להשכיר בכפר גנים או בבקעת אונו? כתבו לי, אני חוזרת לכולם.</p>
+    <a class="phone" href="tel:+972558836333">055-8836333</a>
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/972558836333">וואטסאפ</a>
+      <a class="btn btn-ghost" href="tel:+972558836333">חיוג</a>
+    </div>
+    <p class="sig">דקלה עוזר | do nadlan<br>בעולם הדיגיטלי היום כיף להישאר קצת אנלוגיים</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© דו נדל"ן – דקלה עוזר, מתווכת נדל"ן מוסמכת. רישיון תיווך מס' 30675094</span>
+    <span>כפר גנים, פתח תקווה</span>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/972558836333" aria-label="וואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg>
+</a>
+
+<script>
+const BASE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSoWGeFXmnMHRdnt4sISqdjkbRIPvYDV0vaq-Df3z4oAhW30ox0u8e-dgt0jwFmfBAa1laWnlmTWb7R/pub?single=true&output=csv&gid=";
+const GID_PROPS = "1893179336";
+const GID_REVIEWS = "1223992990";
+const WA = "972558836333";
+
+function parseCSV(text){
+  const rows=[];let row=[],f="",q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c=='"'){ if(text[i+1]=='"'){f+='"';i++;} else q=false; } else f+=c; }
+    else if(c=='"') q=true;
+    else if(c==','){ row.push(f); f=""; }
+    else if(c=='\n'){ row.push(f); rows.push(row); row=[]; f=""; }
+    else if(c!='\r') f+=c;
+  }
+  if(f!==""||row.length){ row.push(f); rows.push(row); }
+  return rows;
+}
+function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+const clean = s => String(s||"").trim();
+
+async function load(gid){
+  const r = await fetch(BASE+gid+"&t="+Date.now());
+  if(!r.ok) throw new Error(r.status);
+  const rows = parseCSV(await r.text());
+  return rows.slice(1).filter(r=>r.some(c=>clean(c)));
+}
+
+let PROPS=[];
+function kind(st){
+  if(st.includes("נמכר")||st.includes("הושכר")) return "closed";
+  if(st.includes("השכר")) return "rent";
+  if(st.includes("מכיר")) return "sale";
+  return "other";
+}
+function card(p){
+  const [status,city,hood,street,rooms,floor,sqm,balcony,parking,elevator,mamad,storage,desc,photo] = Array.from({length:15},(_,i)=>clean(p[i]));
+  const k = kind(status);
+  if(k==="other") return "";
+  const loc = [hood, city].filter(Boolean).join(", ");
+  const title = street ? `רחוב ${esc(street)}` : esc(city);
+  const facts = [];
+  if(rooms) facts.push(`${esc(rooms)} חדרים`);
+  if(floor) facts.push(`קומה ${esc(floor)}`);
+  if(sqm) facts.push(`${esc(sqm)} מ"ר`);
+  const feat = [];
+  if(balcony!=="אין") feat.push("מרפסת");
+  if(mamad!=="אין") feat.push('ממ"ד');
+  if(storage!=="אין") feat.push("מחסן");
+  if(elevator==="יש") feat.push("מעלית");
+  const pk = parking===""?"1":parking;
+  if(pk==="1") feat.push("חניה"); else if(pk!=="0") feat.push(`${esc(pk)} חניות`);
+  const img = /^https?:\/\/.+\.(jpe?g|png|webp)(\?.*)?$/i.test(photo) ? `<img src="${esc(photo)}" alt="${title}, ${esc(loc)}" loading="lazy">` : `<span class="ph">🏡</span>`;
+  const msg = encodeURIComponent(`היי דקלה, אשמח לפרטים על הדירה ברחוב ${street}, ${city}`);
+  const btn = k==="closed"
+    ? `<a class="btn btn-ghost" href="https://wa.me/${WA}?text=${encodeURIComponent("היי דקלה, יש לי דירה ב"+city+" ואשמח לשמוע ממך")}">יש לכם דירה דומה? דברו איתי</a>`
+    : `<a class="btn btn-wa" href="https://wa.me/${WA}?text=${msg}">לפרטים ומחיר בוואטסאפ</a>`;
+  return `<article class="card ${k==="closed"?"closed":""}" data-k="${k}">
+    <div class="pic">${img}<span class="badge ${k==="closed"?"done":""}">${esc(status)}</span></div>
+    <div class="body">
+      <div class="loc">${esc(loc)}</div>
+      <h3>${title}</h3>
+      <div class="facts">${facts.map(f=>`<span>${f}</span>`).join("")}</div>
+      <div class="feat">${feat.map(f=>`<span>${f}</span>`).join("")}</div>
+      ${desc?`<p class="desc">${esc(desc)}</p>`:""}
+      ${btn}
+    </div>
+  </article>`;
+}
+function renderProps(f){
+  const grid=document.getElementById("grid");
+  const list = PROPS.filter(p=>{const k=kind(clean(p[0]));return f==="all"?k!=="other":k===f;});
+  // open listings first, closed at the end
+  list.sort((a,b)=>(kind(clean(a[0]))==="closed")-(kind(clean(b[0]))==="closed"));
+  grid.innerHTML = list.length ? list.map(card).join("") : `<p class="empty">כרגע אין נכסים בקטגוריה הזו. <a href="https://wa.me/${WA}">כתבו לי</a> מה אתם מחפשים.</p>`;
+}
+document.getElementById("filters").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#filters button").forEach(x=>x.classList.toggle("on",x===b));
+  renderProps(b.dataset.f);
+});
+
+function renderReviews(rows){
+  const el=document.getElementById("quotes");
+  if(!rows.length){ document.getElementById("reviews").style.display="none"; return; }
+  el.innerHTML = rows.map(r=>{
+    const [name,city,hood,type,text] = r.map(clean);
+    const place=[hood,city].filter(Boolean).join(", ");
+    const long = text.length>260;
+    const shortT = long ? text.slice(0,text.lastIndexOf(" ",240))+"..." : text;
+    return `<blockquote>
+      <p data-full="${esc(text)}">${esc(shortT)}</p>
+      ${long?`<button class="more">להמשך</button>`:""}
+      <footer><b>${esc(name)}</b>${type?` · ${esc(type)}`:""}${place?` · ${esc(place)}`:""}</footer>
+    </blockquote>`;
+  }).join("");
+  el.addEventListener("click",e=>{
+    if(!e.target.classList.contains("more")) return;
+    const p=e.target.previousElementSibling; p.textContent=p.dataset.full; e.target.remove();
+  });
+}
+
+load(GID_PROPS).then(rows=>{PROPS=rows;renderProps("all");})
+  .catch(()=>{document.getElementById("grid").innerHTML=`<p class="empty">לא הצלחנו לטעון את הנכסים כרגע. <a href="https://wa.me/${WA}">כתבו לי בוואטסאפ</a> ואשלח לכם את הרשימה.</p>`;});
+load(GID_REVIEWS).then(renderReviews).catch(()=>{document.getElementById("reviews").style.display="none";});
+</script>
+</body>
+</html>
