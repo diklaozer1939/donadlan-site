@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /links.html
+
+Sitemap: https://donadlan.co.il/sitemap.xml

@@ -141,6 +141,11 @@ h2::after{content:"";display:block;width:44px;height:3px;border-radius:2px;backg
 .desc{margin:4px 0 0;font-size:16px}
 .card .btn{margin-top:auto;text-align:center;font-size:15px;padding:10px 16px}
 .empty,.loading{color:var(--muted)}
+.pic{display:block}
+.count{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,.55);color:#fff;font-size:13px;padding:2px 10px;border-radius:999px}
+.card h3 a{text-decoration:none}
+.details{color:var(--gold-dark);font-weight:500;font-size:15px}
+
 
 /* testimonials */
 .quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
@@ -277,80 +282,46 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 </a>
 
 <script>
-const BASE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSoWGeFXmnMHRdnt4sISqdjkbRIPvYDV0vaq-Df3z4oAhW30ox0u8e-dgt0jwFmfBAa1laWnlmTWb7R/pub?single=true&output=csv&gid=";
-const GID_PROPS = "1893179336";
-const GID_REVIEWS = "1223992990";
 const WA = "972558836333";
-
-function parseCSV(text){
-  const rows=[];let row=[],f="",q=false;
-  for(let i=0;i<text.length;i++){
-    const c=text[i];
-    if(q){ if(c=='"'){ if(text[i+1]=='"'){f+='"';i++;} else q=false; } else f+=c; }
-    else if(c=='"') q=true;
-    else if(c==','){ row.push(f); f=""; }
-    else if(c=='\n'){ row.push(f); rows.push(row); row=[]; f=""; }
-    else if(c!='\r') f+=c;
-  }
-  if(f!==""||row.length){ row.push(f); rows.push(row); }
-  return rows;
-}
+const SITE = "https://donadlan.co.il";
 function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-const clean = s => String(s||"").trim();
-
-async function load(gid){
-  const r = await fetch(BASE+gid+"&t="+Date.now());
+async function load(file){
+  const r = await fetch(file+"?t="+Date.now());
   if(!r.ok) throw new Error(r.status);
-  const rows = parseCSV(await r.text());
-  return rows.slice(1).filter(r=>r.some(c=>clean(c)));
+  return r.json();
 }
 
 let PROPS=[];
-function kind(st){
-  if(st.includes("נמכר")||st.includes("הושכר")) return "closed";
-  if(st.includes("השכר")) return "rent";
-  if(st.includes("מכיר")) return "sale";
-  return "other";
-}
 function card(p){
-  const [status,city,hood,street,rooms,floor,sqm,balcony,parking,elevator,mamad,storage,desc,photo] = Array.from({length:15},(_,i)=>clean(p[i]));
-  const k = kind(status);
-  if(k==="other") return "";
-  const loc = [hood, city].filter(Boolean).join(", ");
-  const title = street ? `רחוב ${esc(street)}` : esc(city);
+  const k = p.kind;
+  const loc = [p.hood, p.city].filter(Boolean).join(", ");
+  const url = `/n/${p.id}/`;
   const facts = [];
-  if(rooms) facts.push(`${esc(rooms)} חדרים`);
-  if(floor) facts.push(`קומה ${esc(floor)}`);
-  if(sqm) facts.push(`${esc(sqm)} מ"ר`);
-  const feat = [];
-  if(balcony!=="אין") feat.push("מרפסת");
-  if(mamad!=="אין") feat.push('ממ"ד');
-  if(storage!=="אין") feat.push("מחסן");
-  if(elevator==="יש") feat.push("מעלית");
-  const pk = parking===""?"1":parking;
-  if(pk==="1") feat.push("חניה"); else if(pk!=="0") feat.push(`${esc(pk)} חניות`);
-  const img = /^https?:\/\/.+\.(jpe?g|png|webp)(\?.*)?$/i.test(photo) ? `<img src="${esc(photo)}" alt="${title}, ${esc(loc)}" loading="lazy">` : `<div class="ph"><img src="img/mono.png" alt=""><b>${esc(city)}</b>${hood?`<small>${esc(hood)}</small>`:""}</div>`;
-  const msg = encodeURIComponent(`היי דקלה, אשמח לפרטים על הדירה ברחוב ${street}, ${city}`);
+  if(p.rooms) facts.push(`${esc(p.rooms)} חדרים`);
+  if(p.floor) facts.push(`קומה ${esc(p.floor)}`);
+  if(p.sqm) facts.push(`${esc(p.sqm)} מ"ר`);
+  const thumb = p.photos[0] ? p.photos[0].replace(/=w1600$/,"=w800") : "";
+  const img = thumb ? `<img src="${esc(thumb)}" alt="${esc(p.title)}" loading="lazy">` : `<div class="ph"><img src="img/mono.png" alt=""><b>${esc(p.city)}</b>${p.hood?`<small>${esc(p.hood)}</small>`:""}</div>`;
+  const msg = encodeURIComponent(`היי דקלה, ראיתי באתר את הדירה: ${p.title} (${p.status}). אשמח לפרטים ${SITE}${url}`);
   const btn = k==="closed"
-    ? `<a class="btn btn-ghost" href="https://wa.me/${WA}?text=${encodeURIComponent("היי דקלה, יש לי דירה ב"+city+" ואשמח לשמוע ממך")}">יש לכם דירה דומה? דברו איתי</a>`
+    ? `<a class="btn btn-ghost" href="https://wa.me/${WA}?text=${encodeURIComponent("היי דקלה, יש לי דירה ב"+p.city+" ואשמח לשמוע ממך")}">יש לכם דירה דומה? דברו איתי</a>`
     : `<a class="btn btn-wa" href="https://wa.me/${WA}?text=${msg}">לפרטים ומחיר בוואטסאפ</a>`;
   return `<article class="card" data-k="${k}">
-    <div class="pic">${img}${k==="closed"?`<span class="ribbon">${esc(status)}</span>`:`<span class="badge">${esc(status)}</span>`}</div>
+    <a class="pic" href="${url}">${img}${k==="closed"?`<span class="ribbon">${esc(p.status)}</span>`:`<span class="badge">${esc(p.status)}</span>`}${p.photos.length>1?`<span class="count">${p.photos.length} תמונות</span>`:""}</a>
     <div class="body">
       <div class="loc">${esc(loc)}</div>
-      <h3>${title}</h3>
+      <h3><a href="${url}">${esc(p.street?`רחוב ${p.street}`:p.city)}</a></h3>
       <div class="facts">${facts.map(f=>`<span>${f}</span>`).join("")}</div>
-      <div class="feat">${feat.map(f=>`<span>${f}</span>`).join("")}</div>
-      ${desc?`<p class="desc">${esc(desc)}</p>`:""}
+      <div class="feat">${p.features.map(f=>`<span>${esc(f)}</span>`).join("")}</div>
+      ${p.desc?`<p class="desc">${esc(p.desc)}</p>`:""}
+      <a class="details" href="${url}">לכל הפרטים והתמונות</a>
       ${btn}
     </div>
   </article>`;
 }
 function renderProps(f){
   const grid=document.getElementById("grid");
-  const list = PROPS.filter(p=>{const k=kind(clean(p[0]));return f==="all"?k!=="other":k===f;});
-  // open listings first, closed at the end
-  list.sort((a,b)=>(kind(clean(a[0]))==="closed")-(kind(clean(b[0]))==="closed"));
+  const list = PROPS.filter(p=>f==="all"||p.kind===f);
   grid.innerHTML = list.length ? list.map(card).join("") : `<p class="empty">כרגע אין נכסים בקטגוריה הזו. <a href="https://wa.me/${WA}">כתבו לי</a> מה אתם מחפשים.</p>`;
 }
 document.getElementById("filters").addEventListener("click",e=>{
@@ -363,14 +334,13 @@ function renderReviews(rows){
   const el=document.getElementById("quotes");
   if(!rows.length){ document.getElementById("reviews").style.display="none"; return; }
   el.innerHTML = rows.map(r=>{
-    const [name,city,hood,type,text] = r.map(clean);
-    const place=[hood,city].filter(Boolean).join(", ");
-    const long = text.length>260;
+    const place=[r.hood,r.city].filter(Boolean).join(", ");
+    const text=r.text, long = text.length>260;
     const shortT = long ? text.slice(0,text.lastIndexOf(" ",240))+"..." : text;
     return `<blockquote>
       <p data-full="${esc(text)}">${esc(shortT)}</p>
       ${long?`<button class="more">להמשך</button>`:""}
-      <footer><b>${esc(name)}</b>${type?` · ${esc(type)}`:""}${place?` · ${esc(place)}`:""}</footer>
+      <footer><b>${esc(r.name)}</b>${r.type?` · ${esc(r.type)}`:""}${place?` · ${esc(place)}`:""}</footer>
     </blockquote>`;
   }).join("");
   el.addEventListener("click",e=>{
@@ -379,9 +349,9 @@ function renderReviews(rows){
   });
 }
 
-load(GID_PROPS).then(rows=>{PROPS=rows;renderProps("all");})
+load("data/listings.json").then(rows=>{PROPS=rows;renderProps("all");})
   .catch(()=>{document.getElementById("grid").innerHTML=`<p class="empty">לא הצלחנו לטעון את הנכסים כרגע. <a href="https://wa.me/${WA}">כתבו לי בוואטסאפ</a> ואשלח לכם את הרשימה.</p>`;});
-load(GID_REVIEWS).then(renderReviews).catch(()=>{document.getElementById("reviews").style.display="none";});
+load("data/reviews.json").then(renderReviews).catch(()=>{document.getElementById("reviews").style.display="none";});
 </script>
 </body>
 </html>

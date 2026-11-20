@@ -1,0 +1,35 @@
+name: עדכון נכסים מהגיליון
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/build.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-listings
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/build.mjs
+      - name: שמירת שינויים
+        run: |
+          git add -A data n sitemap.xml links.html
+          if git diff --cached --quiet; then echo "אין שינויים"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "עדכון נכסים מהגיליון"
+          git push
