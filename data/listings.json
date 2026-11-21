@@ -1,8 +1,972 @@
 [
  {
-  "id": "ad078d",
+  "id": "772e15",
   "kind": "sale",
   "status": "למכירה",
+  "city": "רמת השרון",
+  "hood": "מורשה",
+  "street": "שבי ציון",
+  "rooms": "",
+  "floor": "",
+  "sqm": "340",
+  "features": [
+   "חניה"
+  ],
+  "desc": "מגרש אחורי של כ-340 מ\"ר מתוך דו-משפחתי, פונה לנוף פתוח. אפשר לבנות מרתף ועוד 2 קומות.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1cnxHn8ZBGoxyRnP5yxxwwqLSLTcKbviJ=w1600",
+   "https://lh3.googleusercontent.com/d/1m8_2iguXeHrsDMQtg2uCE3Ur0y1n1tDv=w1600",
+   "https://lh3.googleusercontent.com/d/11SM4hZNDkc06nSEbTF7JJiH8Y6VvARgc=w1600",
+   "https://lh3.googleusercontent.com/d/1-Jy0diO1zQVp67YH35DXq0Uuv6cjY5og=w1600",
+   "https://lh3.googleusercontent.com/d/18_of9ytjA15DxYO3h_w1Swejpj6giZ-b=w1600"
+  ],
+  "date": "",
+  "title": "ברחוב שבי ציון, רמת השרון"
+ },
+ {
+  "id": "db5049",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "הביטחון",
+  "rooms": "4",
+  "floor": "4",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית"
+  ],
+  "desc": "4 חדרים בבניין אחרי תמ\"א, משופצת. מטבח פתוח לסלון, יחידת הורים גדולה ומרפסת של 14 מ\"ר לנוף פתוח.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1FQzrU1tVkq6bWUuqvPIhUjt-AcakgU6s=w1600",
+   "https://lh3.googleusercontent.com/d/1h-l2h54i9yC-qzD9SRltlFe2iT84j_ns=w1600",
+   "https://lh3.googleusercontent.com/d/15OPy91nq56WbN7CJf5DhIQsQu9xvEVDB=w1600",
+   "https://lh3.googleusercontent.com/d/13AqPbTeyA-p6lgE97iaSBcMtjN2GRxeG=w1600",
+   "https://lh3.googleusercontent.com/d/1xuRnDA1Ttlukb-ukEQb8AECL-8JAT5LY=w1600",
+   "https://lh3.googleusercontent.com/d/1UwYE7nZb6LkAenFK8Pw9WPsVk_9vNcLZ=w1600",
+   "https://lh3.googleusercontent.com/d/1vpjqPdwYyeLgoLRBuWVHOBu1nFfRwOUg=w1600",
+   "https://lh3.googleusercontent.com/d/1V_zr3h5qv-8s4iuZp2lmdqQ3ouK5qxyz=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב הביטחון, קרית אונו"
+ },
+ {
+  "id": "3074d6",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "4",
+  "floor": "15",
+  "sqm": "130",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "חניה"
+  ],
+  "desc": "4 חדרים פונה מזרחה לנוף ירוק פתוח. חדר הורים מואר, חדר כביסה, ממ\"ד, חניה ומחסן.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1q49i11oMRh3-M5izW7rsFTnWkwxwqhhd=w1600",
+   "https://lh3.googleusercontent.com/d/1GKHelWaxgkesoLEKDhD6xQDaR9hMTwnY=w1600",
+   "https://lh3.googleusercontent.com/d/1zrmI-01rP0xsjmsXZkvTWkscOBs9-B2i=w1600",
+   "https://lh3.googleusercontent.com/d/1zVkWppD7dqSl5LuzMITetvkUW_nq5t8S=w1600",
+   "https://lh3.googleusercontent.com/d/14PN5oA9ZZuSnNND-we7kluH2AGIpPGhj=w1600",
+   "https://lh3.googleusercontent.com/d/1XAODOcT_v7maRVHdNmZZMBHkgYm9kCiW=w1600",
+   "https://lh3.googleusercontent.com/d/11OBmwL6GSM28LVNi57DOhgz0AJJ3nUer=w1600",
+   "https://lh3.googleusercontent.com/d/1ldpffFoc_kKH00rAVk7myyRTBQvwBHb_=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "8ff47a",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "5",
+  "floor": "9",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "2 חניות"
+  ],
+  "desc": "5 חדרים בקומה גבוהה, מטבח משודרג וחדר הורים מרווח. 2 חניות, לטווח ארוך.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1jkwhJnToja9FScM1XKeKUx3tzd25Nne0=w1600",
+   "https://lh3.googleusercontent.com/d/1MAdhgL3uJcyVUi05eDyCw4jajmbBBXdJ=w1600",
+   "https://lh3.googleusercontent.com/d/1bQixtCIDBl2_nktkxoGySGFdlyBDc4ro=w1600",
+   "https://lh3.googleusercontent.com/d/1B9ZoaQynzTFVjup3pskLfJwag6_oMz7p=w1600",
+   "https://lh3.googleusercontent.com/d/1zx7ZNbEAbZk_sVZACHhR-av7jqqZYOKg=w1600",
+   "https://lh3.googleusercontent.com/d/1C4Fp6OAE_HoHbkjIedXofDf6m1vORewD=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "6bb46e",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "4",
+  "floor": "12",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "חניה"
+  ],
+  "desc": "4 חדרים חדשה עם סלון גדול מאוד ומרפסת שמש מזרחה, לכיוון סביון. לטווח ארוך.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1v5XXNNHsPPnUCGdPnZ9K9n-lbHuL4oBE=w1600",
+   "https://lh3.googleusercontent.com/d/1ITnJz7wl16EmhWFkx9UYKLxSy0_Pvmcm=w1600",
+   "https://lh3.googleusercontent.com/d/1d9nsZZviLDoolcZW5QpHXyrK_FUq0egQ=w1600",
+   "https://lh3.googleusercontent.com/d/1rcJI40AbOQet3gZrjqNJouwTLeMA0ukK=w1600",
+   "https://lh3.googleusercontent.com/d/1rwvVuMDHq8RJdiqGdltauo5sZwz-qfoF=w1600",
+   "https://lh3.googleusercontent.com/d/13wi0gR2o5vKKDXi2Ok4VbpegLpmpENA_=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "1617c9",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "5",
+  "floor": "10",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "2 חניות"
+  ],
+  "desc": "5 חדרים בפרויקט עלמא, פונה מערבה לשקיעות ובריזה. מרפסת שמש של 15 מ\"ר, 2 חניות ומחסן.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Rqj9dtIUSuBQChPyq_Jv12k9kWGN0zOj=w1600",
+   "https://lh3.googleusercontent.com/d/1CKhIofDiHwiyk1itBZkYTcL1iTYC8Yg3=w1600",
+   "https://lh3.googleusercontent.com/d/1S_5xC7O8iT8oY6CxEypV6T3uHhqEu-7U=w1600",
+   "https://lh3.googleusercontent.com/d/1DhzBon8aF-An67hxGamDDYN9XoyA0kIe=w1600",
+   "https://lh3.googleusercontent.com/d/1Rq3ZSfyxTLr-OsxyaMLh8V9Hjgrer65A=w1600",
+   "https://lh3.googleusercontent.com/d/1BDTa2CtRADFNzA9HN1kD75Kgzg2K35Vm=w1600",
+   "https://lh3.googleusercontent.com/d/1U0xzaK1zeJ8jGgbibmJLQG-0-h3NjmaB=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "6399a6",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "פתח תקווה",
+  "hood": "המרכז השקט / מרכז העיר",
+  "street": "חפץ חיים",
+  "rooms": "4",
+  "floor": "7",
+  "sqm": "90",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מעלית",
+   "חניה"
+  ],
+  "desc": "דירה חדשה מקבלן בקומה גבוהה, שטופת שמש, עם מרפסת לנוף פתוח. קרוב לגנים, בתי ספר ופארקים.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1isjuzcwdX3ya6pkS-3XrdJ7tKCLafMPO=w1600",
+   "https://lh3.googleusercontent.com/d/1v5Kr6lzDzSdu2QqNm473a4UY-xT5bWWB=w1600",
+   "https://lh3.googleusercontent.com/d/1omugDdu7Ub-51NSPxbyatkdhY7kTvhQh=w1600",
+   "https://lh3.googleusercontent.com/d/1r-rNBW0fM_OQLQDUnXPoWgM-iXj11cH2=w1600",
+   "https://lh3.googleusercontent.com/d/1ZGJuQ0HMlQK0GGI0mGtoaCfVfp4nRroC=w1600",
+   "https://lh3.googleusercontent.com/d/1PtqxTHOZEvOYYN8wthEECX8tpzhwXcAi=w1600",
+   "https://lh3.googleusercontent.com/d/18SMpVEkf_9ZR_CoKiDYSZwDJ1fU6AvNE=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב חפץ חיים, פתח תקווה"
+ },
+ {
+  "id": "ff2927",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "פתח תקווה",
+  "hood": "כפר גנים ב",
+  "street": "זליג בס",
+  "rooms": "6",
+  "floor": "6",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "מעלית",
+   "חניה"
+  ],
+  "desc": "דירה גדולה בכפר גנים ב׳ עם סלון מרווח, מרפסת סוכה ובריכה לדיירי הבניין. נוף פתוח, צריכה שיפוץ.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1wXrB6XFKBzZQx3Et9MV8kBdLJv3UEgq_=w1600",
+   "https://lh3.googleusercontent.com/d/1uiDbbeyxl1ZjIHJrFBtuvTJP6BlcKdSG=w1600",
+   "https://lh3.googleusercontent.com/d/1lA48riOzy2nbj_P1VNoOPFwr1R9LLVCp=w1600",
+   "https://lh3.googleusercontent.com/d/1bbYEGyf62DaBDjBm9v7i7jRLM9my9HUz=w1600"
+  ],
+  "date": "",
+  "title": "6 חדרים ברחוב זליג בס, פתח תקווה"
+ },
+ {
+  "id": "8df65e",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "גני תקווה",
+  "hood": "מרכז הישוב",
+  "street": "ים המלח",
+  "rooms": "3",
+  "floor": "0",
+  "sqm": "100",
+  "features": [
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "בית ישן על מגרש של 1000 מ\"ר, 3 חדרים גדולים ומזגן בכל חדר. לטווח ארוך.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1toHUxNFEVob_ghBh_3tdNHLuEngwtZ-G=w1600",
+   "https://lh3.googleusercontent.com/d/1W01fjsMflss2qlQ1QGVyisf4Gbd1X6eG=w1600",
+   "https://lh3.googleusercontent.com/d/1yQzwOPTecPTzId3QRr8FR-tkCYkMQPQq=w1600",
+   "https://lh3.googleusercontent.com/d/1qdWGwL-R7CjoD95e1wZdw19oCOjfQtq9=w1600",
+   "https://lh3.googleusercontent.com/d/1SNAI8sX1AjS8o9D_boUZc0BhXJ_VxNYP=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב ים המלח, גני תקווה"
+ },
+ {
+  "id": "5ee59b",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "אור יהודה",
+  "hood": "רמת פנקס",
+  "street": "בן איש חי",
+  "rooms": "",
+  "floor": "",
+  "sqm": "490",
+  "features": [
+   "חניה"
+  ],
+  "desc": "מגרש נדיר עם בית ישן ברמת פנקס, בשכונה שקטה. כ-490 מ\"ר, אפשר לבנות 2 יחידות עם מרתף.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1b7F_R9Zoo1h8DYMoyKz56qdujZu8faAg=w1600",
+   "https://lh3.googleusercontent.com/d/1W0O3CiBmAHkRfpkmhy7_ScVWyiRQ2CQf=w1600",
+   "https://lh3.googleusercontent.com/d/1Snlbt8AN0h1IhgrarzVefVPLDukC4CUu=w1600",
+   "https://lh3.googleusercontent.com/d/1rOL4pvmMMHIEZlX45sibKMz6m04xfJx9=w1600",
+   "https://lh3.googleusercontent.com/d/1hpgIaoapJo3KijVNxbocJgkFZc9GgAkk=w1600",
+   "https://lh3.googleusercontent.com/d/1N930iO31SCpGVyS6J7DO3T-3_dG34Ac4=w1600",
+   "https://lh3.googleusercontent.com/d/1fsXMRDYiwO-Z9-Q9vp6Wi5LgTItLUQL2=w1600",
+   "https://lh3.googleusercontent.com/d/1B5YotV31v_ZVcFQybvkMw3aC1LzB8082=w1600"
+  ],
+  "date": "",
+  "title": "ברחוב בן איש חי, אור יהודה"
+ },
+ {
+  "id": "201beb-2",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "פתח תקווה",
+  "hood": "כפר גנים א",
+  "street": "יטקובסקי אחים",
+  "rooms": "4",
+  "floor": "3",
+  "sqm": "110",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1bAV2AWATO3BXk_rw6IWDISegVEPQaB3s=w1600",
+   "https://lh3.googleusercontent.com/d/1vRIMgXgZfOjOREXZ3vo7pNtED7dn6pNP=w1600",
+   "https://lh3.googleusercontent.com/d/18zpy1n2zy6jGw_rdyl6M07G4y-3holUu=w1600",
+   "https://lh3.googleusercontent.com/d/1xfG6s9tF6RAIjtTFR_XvG084-wqIS04J=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב יטקובסקי אחים, פתח תקווה"
+ },
+ {
+  "id": "e261ad",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "יהוד",
+  "hood": "מרכז",
+  "street": "הכלנית",
+  "rooms": "",
+  "floor": "",
+  "sqm": "",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "קוטג'",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1WzRg35IBMMS4ts_13h5jLpp7wWFmA_Rm=w1600",
+   "https://lh3.googleusercontent.com/d/1AFcr0UMo0YAGg-rrOzF37pdU9_yyfsIR=w1600",
+   "https://lh3.googleusercontent.com/d/18jA0wad6ZNzKlYpv1kLDK8FA-sZJevA0=w1600",
+   "https://lh3.googleusercontent.com/d/1e6MNFoj7A1c1z1t-ekYht_u2ACkI4EH3=w1600",
+   "https://lh3.googleusercontent.com/d/1-GNNozmMlSoppYtszwos-RQeIxxQ-hlt=w1600",
+   "https://lh3.googleusercontent.com/d/1W0GINazWZXt3x-CBz-NQboayTiPaSYyc=w1600",
+   "https://lh3.googleusercontent.com/d/1f-VnCB4glvo-VGlAKe5av7PPfyVj32EV=w1600"
+  ],
+  "date": "",
+  "title": "ברחוב הכלנית, יהוד"
+ },
+ {
+  "id": "bfccf4",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "תל אביב",
+  "hood": "הצפון החדש",
+  "street": "אבן גבירול",
+  "rooms": "4",
+  "floor": "1",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1PJupwe9-g5pf4Qz5_48B3hL3JT5wTByh=w1600",
+   "https://lh3.googleusercontent.com/d/1RlOabOCK6APgSkvDa2WuGerk6-XNJkfI=w1600",
+   "https://lh3.googleusercontent.com/d/1sn3JL5C9329yMgCDtfbudfiq4cCNZNWS=w1600",
+   "https://lh3.googleusercontent.com/d/1VRPxuUg113RqTGqWuVjOxyHGAfWJSQ5W=w1600",
+   "https://lh3.googleusercontent.com/d/1RW9Tr3BXvWBblLiP0t_Y8VCvE1sdpg8A=w1600",
+   "https://lh3.googleusercontent.com/d/1IQ1JGuVh_qGn0ZDhGLYRxxjqRg5gbeid=w1600",
+   "https://lh3.googleusercontent.com/d/19jvcbgrroZpMzD0O_Ty-xBmCvlIlt457=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב אבן גבירול, תל אביב"
+ },
+ {
+  "id": "06190e",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "רמת גן",
+  "hood": "חרוזים",
+  "street": "רות",
+  "rooms": "3",
+  "floor": "5",
+  "sqm": "88",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1HaiLcUIpJm8HMUHIoncbbkdPhsxQpcjr=w1600",
+   "https://lh3.googleusercontent.com/d/11vYpLnHDKubZV7Bq1TLu0q9BqDItTi1J=w1600",
+   "https://lh3.googleusercontent.com/d/1N_l00aGUc9hdauqIlJRTN16fiAYgYbpv=w1600",
+   "https://lh3.googleusercontent.com/d/1b4Ay4qB_roNL2G33ZC0Bublzs3RCW-MB=w1600",
+   "https://lh3.googleusercontent.com/d/1eor7f-YLVQUkmVPdo_-eTKUC12dTop1C=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב רות, רמת גן"
+ },
+ {
+  "id": "c082da",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "רמת גן",
+  "hood": "נגבה",
+  "street": "הרא\"ה",
+  "rooms": "2.5",
+  "floor": "2",
+  "sqm": "60",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1VXXg7OgwiREoasd6j82qwhqPLEVNi96D=w1600",
+   "https://lh3.googleusercontent.com/d/18dhWfLhvfT7-L9g3UM9HSx8VnpxpNqQc=w1600",
+   "https://lh3.googleusercontent.com/d/1RDq9DrpN_XmnNciEdUi2j9RoexcPxK22=w1600",
+   "https://lh3.googleusercontent.com/d/1BCZzVh4KUXPvZ52Nw-7c1AJlF3sq6JvC=w1600",
+   "https://lh3.googleusercontent.com/d/1A_AAMgAqnVctgd8bfTxIQL_2be0UYhme=w1600",
+   "https://lh3.googleusercontent.com/d/13_R_R046NsQ5-Wx_0a_6uLTNP_advq8o=w1600"
+  ],
+  "date": "",
+  "title": "2.5 חדרים ברחוב הרא\"ה, רמת גן"
+ },
+ {
+  "id": "e438d4",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "נאוה סמל",
+  "rooms": "6",
+  "floor": "1",
+  "sqm": "141",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1T15UMDu70uP6LTPudQT-t5BX5aVURB6k=w1600",
+   "https://lh3.googleusercontent.com/d/1XtNuOxUMeXk8hXdsDKwbi0RSCGGHCVur=w1600",
+   "https://lh3.googleusercontent.com/d/1W6cAc-JipOaKjnFYhCDUwwZ8jEn-WFK6=w1600",
+   "https://lh3.googleusercontent.com/d/1pWZSq7Z_dsI03jdzQgH1hXAPwcbNxIpu=w1600",
+   "https://lh3.googleusercontent.com/d/1tLGAGsqBjECb57AMIgP857MZN4DRKJCD=w1600"
+  ],
+  "date": "",
+  "title": "6 חדרים ברחוב נאוה סמל, קרית אונו"
+ },
+ {
+  "id": "db8886",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "נאוה סמל",
+  "rooms": "3",
+  "floor": "2",
+  "sqm": "86",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1ydquQSKl-5ZkUGSYA07MuemrbzujvSpC=w1600",
+   "https://lh3.googleusercontent.com/d/1Twv9-Py8JY7z3l-jmw50lV48g4H3Wk2S=w1600",
+   "https://lh3.googleusercontent.com/d/1z0QiHO_FQ94c2aWZrV4xJPO-aw3fM1HA=w1600",
+   "https://lh3.googleusercontent.com/d/1ACOTQC2HD51bKL24vqEqicy_uYfI98EM=w1600",
+   "https://lh3.googleusercontent.com/d/1BX9QMoD_15mymPpJPzT0iK1cSCdMrMdL=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב נאוה סמל, קרית אונו"
+ },
+ {
+  "id": "e9a507",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "לוחמי האש",
+  "rooms": "5",
+  "floor": "10",
+  "sqm": "140",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1IBi4fKi5xo8-sWw3IMqN4N9mxdlmODsB=w1600",
+   "https://lh3.googleusercontent.com/d/1p9vkaCbxknrz3GCph-41s8iF1vy9sR3e=w1600",
+   "https://lh3.googleusercontent.com/d/10cMGu8Xak5io-NPIx2iBw3ubV4ygn-CE=w1600",
+   "https://lh3.googleusercontent.com/d/1BtxqlGtxo__GMyf7O5YUA4HNcKMRtMwz=w1600",
+   "https://lh3.googleusercontent.com/d/1OQdFTyOaMtNzMgXjmLLFJ5lHwF_MhERr=w1600",
+   "https://lh3.googleusercontent.com/d/1Sa1rM8JbQnCxT4StJVM88KTn1JFTmh6a=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב לוחמי האש, קרית אונו"
+ },
+ {
+  "id": "c478f5",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "לוחמי האש",
+  "rooms": "3",
+  "floor": "11",
+  "sqm": "88",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1WlGE-8OKXtRrh858uLz9wOdXOnsfI_zN=w1600",
+   "https://lh3.googleusercontent.com/d/1g12r5h_JJSRVNJImM07_FCjKKiiNdh_A=w1600",
+   "https://lh3.googleusercontent.com/d/1VFx6XttycUXwirTa_4I0TzHoz4y_MPSR=w1600",
+   "https://lh3.googleusercontent.com/d/1D8IhTEt7LMXcNHfTWvh7BQTz57Tc_ACr=w1600",
+   "https://lh3.googleusercontent.com/d/1ZiwgYYn76scepgZSFRguHGbhbii7S7BB=w1600",
+   "https://lh3.googleusercontent.com/d/13d02fVMhhnrkEZPYQPUvDpnQHUQZ8970=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב לוחמי האש, קרית אונו"
+ },
+ {
+  "id": "8c191c",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "לוחמי האש",
+  "rooms": "4",
+  "floor": "12",
+  "sqm": "110",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/19sAyCyIBrpKNona9P-KPbrw5z2tzPmHE=w1600",
+   "https://lh3.googleusercontent.com/d/1ElFMUWAZS9T68xkF1WLHIg3kr8HnBxJN=w1600",
+   "https://lh3.googleusercontent.com/d/1oAt4lR7i9OxXzPCW7AL9LO6PGdjX4pJG=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב לוחמי האש, קרית אונו"
+ },
+ {
+  "id": "4af2db",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "לוחמי האש",
+  "rooms": "5",
+  "floor": "1",
+  "sqm": "142",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1yPiHvDqzcm-stjcde0XQvl_fnzSFnTSB=w1600",
+   "https://lh3.googleusercontent.com/d/1COkMql_wqCAz6SsW8cMmUulIWvdm0hEX=w1600",
+   "https://lh3.googleusercontent.com/d/1UhFJNY9ZxQYIYWreXqn_mSadbDoZxrac=w1600",
+   "https://lh3.googleusercontent.com/d/1CGG0kzH2Do0A5eK1wp_eMhM2EQNZYYI3=w1600",
+   "https://lh3.googleusercontent.com/d/1AhA54cO1xqV06yIrEHQfJetqrCpUtAIT=w1600",
+   "https://lh3.googleusercontent.com/d/1ZLYeabIqQjTqe0wN-vjQ-S-ekn7UL8TC=w1600",
+   "https://lh3.googleusercontent.com/d/11S_ZEFtBEUKnoWECBMqUy0qWcuxXpQGd=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב לוחמי האש, קרית אונו"
+ },
+ {
+  "id": "a853b8",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "צומת סביון",
+  "street": "לוחמי האש",
+  "rooms": "4",
+  "floor": "4",
+  "sqm": "115",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1sslmJh0L5yn2LebBqrI9eKu-1m6srni9=w1600",
+   "https://lh3.googleusercontent.com/d/1_kjPEhS7CBKoqGAPYJeXmWKDTTM14L9M=w1600",
+   "https://lh3.googleusercontent.com/d/13Ih9RVnOWY-RKDUb4evtLe9Z9e1Z4HVY=w1600",
+   "https://lh3.googleusercontent.com/d/1KL-_-qyWEmb77zSoHsKlePNwPguo6pHx=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב לוחמי האש, קרית אונו"
+ },
+ {
+  "id": "6d6ba5",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "פסגת אונו",
+  "street": "הדובדבן",
+  "rooms": "2",
+  "floor": "4",
+  "sqm": "9",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "משרד",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/18XP8n7gzOF5aqPCVLRsgWC8as0vKzTn_=w1600",
+   "https://lh3.googleusercontent.com/d/1sZdr1pgAKvA-uH8T6hJ_aI1W9Uj3mk3F=w1600",
+   "https://lh3.googleusercontent.com/d/1jU15YJYeZrJT_ZsoLVTVuVX_Qev1xrYX=w1600"
+  ],
+  "date": "",
+  "title": "2 חדרים ברחוב הדובדבן, קרית אונו"
+ },
+ {
+  "id": "695da0",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "פתח תקווה",
+  "hood": "פסגת הדר",
+  "street": "שלמה זלוטניק",
+  "rooms": "5",
+  "floor": "4",
+  "sqm": "144",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1s2ms4hO0bpAgzIjHq29ix6m-USAuBbap=w1600",
+   "https://lh3.googleusercontent.com/d/16q9ZV9X3rwetva2Pc-8TbgyA3PM5nC7Y=w1600",
+   "https://lh3.googleusercontent.com/d/19_k4chJ8l86KH3h4jzs82LgOd_CvXdv8=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב שלמה זלוטניק, פתח תקווה"
+ },
+ {
+  "id": "10fedc",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "פתח תקווה",
+  "hood": "הדר המושבות החדשה",
+  "street": "רפאל איתן",
+  "rooms": "4.5",
+  "floor": "11",
+  "sqm": "116",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1W2RKAJLy7L2r1p2uLzZO9ilR8q5mWeL3=w1600",
+   "https://lh3.googleusercontent.com/d/12ai6OFzYxppkiCDROKoup60cuc7s_kq2=w1600",
+   "https://lh3.googleusercontent.com/d/1ezwyW2Nx-D306ULguDObBRIS6-6mpgvd=w1600",
+   "https://lh3.googleusercontent.com/d/18VRx_IwxKsYNZ3qMkincwLC24KCTvSjm=w1600"
+  ],
+  "date": "",
+  "title": "4.5 חדרים ברחוב רפאל איתן, פתח תקווה"
+ },
+ {
+  "id": "d5ed26",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "פתח תקווה",
+  "hood": "מרכז העיר",
+  "street": "פיארברג",
+  "rooms": "4",
+  "floor": "2",
+  "sqm": "110",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1ZK3nPLUWuRxt-DlnyVr_bcSo8TYQnbhr=w1600",
+   "https://lh3.googleusercontent.com/d/14GCmpRufoaNvy-HDg_770NqVCxZgnHSr=w1600",
+   "https://lh3.googleusercontent.com/d/1mH2s981MLagkVEebqt8VjUk_AJsWtnXJ=w1600",
+   "https://lh3.googleusercontent.com/d/1IcWWwtsanyPqxrkPyZEderVnA-T5EkdT=w1600",
+   "https://lh3.googleusercontent.com/d/14mNR2vhaz1UKbubAjGX_cZyAHb5t95DX=w1600",
+   "https://lh3.googleusercontent.com/d/16a3mwNvxwNwEVkYSWpERIoe9LE7DV8hg=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב פיארברג, פתח תקווה"
+ },
+ {
+  "id": "505496",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "פתח תקווה",
+  "hood": "כפר גנים א",
+  "street": "מיכל לייב כץ",
+  "rooms": "1",
+  "floor": "0",
+  "sqm": "50",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "יחידת דיור",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1mvtmIJRgI-c2IQ6l3Bt4DbPjkxZVDD6W=w1600",
+   "https://lh3.googleusercontent.com/d/14U0P6CZsmrlEyQAMpOJQJTSvueoppSsK=w1600",
+   "https://lh3.googleusercontent.com/d/1Rllzao02sABzwW8m8-YDcWGsSd-hgwIi=w1600",
+   "https://lh3.googleusercontent.com/d/1j50wj07d8Pj9kZFlCzeiN61KjIi5L6j5=w1600"
+  ],
+  "date": "",
+  "title": "1 חדרים ברחוב מיכל לייב כץ, פתח תקווה"
+ },
+ {
+  "id": "f4a707",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "פתח תקווה",
+  "hood": "פארקטק / קרית אריה",
+  "street": "מוטה גור",
+  "rooms": "2",
+  "floor": "4",
+  "sqm": "10",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "משרד",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1fX9jye5HnIk3dejKykoe3whtgDbVIXRT=w1600",
+   "https://lh3.googleusercontent.com/d/1p3Boct8TKzxUz0-ySxKmq4erbMY5M47r=w1600",
+   "https://lh3.googleusercontent.com/d/1ybaoGmSS6Y2tubCDyBWG8ZZB2soMoNiG=w1600",
+   "https://lh3.googleusercontent.com/d/1DmjdY46ADN__v36aPz4-GO82rqflEWof=w1600"
+  ],
+  "date": "",
+  "title": "2 חדרים ברחוב מוטה גור, פתח תקווה"
+ },
+ {
+  "id": "201beb",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "פתח תקווה",
+  "hood": "כפר גנים ב",
+  "street": "יטקובסקי אחים",
+  "rooms": "4",
+  "floor": "3",
+  "sqm": "110",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1OB8_baudoJYDny193Xz-IRle98ADMWxB=w1600",
+   "https://lh3.googleusercontent.com/d/1UY4HPs5hbT54jrPE4qwqs47sW8mnCW5T=w1600",
+   "https://lh3.googleusercontent.com/d/1MX0lIQzvPbmTPOzACoBWM9M0yRQTRzjw=w1600",
+   "https://lh3.googleusercontent.com/d/1BARDQStHukshCZN6CYLddTsv5E4oCFbi=w1600",
+   "https://lh3.googleusercontent.com/d/1hxhdDU0OPZThSx2bHm7PcGMO-HZAv4m6=w1600",
+   "https://lh3.googleusercontent.com/d/1Qh1uqXdpuPv6YGPwMM_xJFK1srBivK0B=w1600",
+   "https://lh3.googleusercontent.com/d/1uKpm1_L-BFBrbWB-FmEyhSQcUHQBkdNO=w1600",
+   "https://lh3.googleusercontent.com/d/1-btNzt7pj7Q5_mThXiWwYddxz4YDF1F3=w1600",
+   "https://lh3.googleusercontent.com/d/1ZIohBZqL26jOL9pO-jMCACmtOLBY8I3D=w1600",
+   "https://lh3.googleusercontent.com/d/1JTEbMkJ_7wsK9YIKZidplPkq-BPRNPUe=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב יטקובסקי אחים, פתח תקווה"
+ },
+ {
+  "id": "4bc452",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "פתח תקווה",
+  "hood": "כפר גנים א",
+  "street": "טרומפלדור",
+  "rooms": "4",
+  "floor": "3",
+  "sqm": "104",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/138am5oFFmAgDr7TbZq1K_F3ALMLUvR4N=w1600",
+   "https://lh3.googleusercontent.com/d/103qG6rz9pgfwuDgCPRhAVPBhCSlST9Go=w1600",
+   "https://lh3.googleusercontent.com/d/1sH-Bf4SdiZkQpcliHHxvOl8V3qonABfi=w1600",
+   "https://lh3.googleusercontent.com/d/1Qnf2HmxuBLoXax44IvCMmq2o-l03r8vH=w1600",
+   "https://lh3.googleusercontent.com/d/1n9JS8Cg9sfwSZRER3GeDGMeITxqW-EjL=w1600",
+   "https://lh3.googleusercontent.com/d/1shgBv86ctQVS0iL_rQ27rrpxa85uNCg0=w1600",
+   "https://lh3.googleusercontent.com/d/1NkVkUOwct4SU8IDNRS4Fl1EOTur4JryD=w1600",
+   "https://lh3.googleusercontent.com/d/1xKUQN3RC59V9XT9bd-dpLFeRojJcAZD-=w1600",
+   "https://lh3.googleusercontent.com/d/1ovKO3zH8Rs2Zrht_NojGmw1WXZ7qDUos=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב טרומפלדור, פתח תקווה"
+ },
+ {
+  "id": "f7a7b3",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "פתח תקווה",
+  "hood": "רמת ורבר",
+  "street": "הנס אנדרסן",
+  "rooms": "4",
+  "floor": "5",
+  "sqm": "110",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Kgjl2-PHfttJqQdklqKVm-mkOCpXDGOd=w1600",
+   "https://lh3.googleusercontent.com/d/163yWMmIUzbzEoo5FKJ1V5khF5MlZGJcQ=w1600",
+   "https://lh3.googleusercontent.com/d/1k7BiOuipgUUo5fpLizWa2_HvFg8TmjWU=w1600",
+   "https://lh3.googleusercontent.com/d/1NPMhITpsVqDhUynUxbvZ4cX5NjoZPBPG=w1600",
+   "https://lh3.googleusercontent.com/d/1lvu_eR21aOz48z6_f_tRzlnKtUwqhINq=w1600",
+   "https://lh3.googleusercontent.com/d/1Rgb0FikYqdXQ5izIvjkH5gkXZSJs-mHA=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב הנס אנדרסן, פתח תקווה"
+ },
+ {
+  "id": "1a9d09",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "פתח תקווה",
+  "hood": "כפר גנים ב",
+  "street": "דוד תדהר",
+  "rooms": "5",
+  "floor": "1",
+  "sqm": "127",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1ZCjhMh7b8U09s3WnkwZVAnN2dWSvCv-7=w1600",
+   "https://lh3.googleusercontent.com/d/1T9vbWn9eeugfeKBwgtMnq6sv3-8emTFN=w1600",
+   "https://lh3.googleusercontent.com/d/1vIcsuQsCaKE8iseSOQldAlfcMem94VUs=w1600",
+   "https://lh3.googleusercontent.com/d/11VN-54SDt8kbQ7dSX_x3vTOdxl1FNTm5=w1600",
+   "https://lh3.googleusercontent.com/d/1CMQkJ5n9AyyWGDvYFKkg2Jb3xOgmq-GZ=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב דוד תדהר, פתח תקווה"
+ },
+ {
+  "id": "678c7e",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "יהוד",
+  "hood": "קרית הסביונים",
+  "street": "דרך משה דיין",
+  "rooms": "4",
+  "floor": "7",
+  "sqm": "136",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1wSB21kgFl8tzjOTmKUSzbLipcVwGjz73=w1600",
+   "https://lh3.googleusercontent.com/d/1apmhlnt7WFUQy5-CkQVx6-m9QUapDBDB=w1600",
+   "https://lh3.googleusercontent.com/d/1gcmu9VEeWY--I9QsXTAmxqRuRgfrvmck=w1600",
+   "https://lh3.googleusercontent.com/d/1XAs4Ds5T3yJEVtFmsj-wg8hMQIqSyr0n=w1600",
+   "https://lh3.googleusercontent.com/d/1v2_eLJsfGLBfpPLuwIivl1zmHj8Fd6Pe=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב דרך משה דיין, יהוד"
+ },
+ {
+  "id": "f4822d",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "גבעת שמואל",
+  "hood": "רמת הדר",
+  "street": "יצחק שמיר",
+  "rooms": "3",
+  "floor": "13",
+  "sqm": "95",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1RZAjC72Wt2MrEfmqPutK_QcP-gSht1Dz=w1600",
+   "https://lh3.googleusercontent.com/d/11n_cDBLdzlMovwoJf7-Z2LKoP6JJvYSz=w1600",
+   "https://lh3.googleusercontent.com/d/12dVbFvGJjiPQluek_v6TR4jz-HFlVzZt=w1600",
+   "https://lh3.googleusercontent.com/d/18vcVCubXk6OTVDzNap5wKBYsw8uCYrm4=w1600",
+   "https://lh3.googleusercontent.com/d/1Qb4kjnbR--ctOU-Vw3h3hP-2B7zRnRkk=w1600",
+   "https://lh3.googleusercontent.com/d/1LPsuNfQLHptZn-kRqh0p38t_vf5GeaHp=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב יצחק שמיר, גבעת שמואל"
+ },
+ {
+  "id": "e240f3",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "אור יהודה",
+  "hood": "רמת פנקס",
+  "street": "בן איש חי",
+  "rooms": "3",
+  "floor": "0",
+  "sqm": "490",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "בית פרטי",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Gh4fN1rRMdKUKn6glBE6Y0budiZQ7OSn=w1600",
+   "https://lh3.googleusercontent.com/d/1Tw30-qosVKZr8EyvbWTJUDaqiFS69CPo=w1600",
+   "https://lh3.googleusercontent.com/d/1eLhKY9rdvCCXxnrpOsbmxq2LXtrLESm4=w1600",
+   "https://lh3.googleusercontent.com/d/19mozosUGUV2LA8zpo6zyttguTXmhT4hj=w1600",
+   "https://lh3.googleusercontent.com/d/1w2LA-oRNpyOELw9YaByUhe8U3UHWGUGy=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב בן איש חי, אור יהודה"
+ },
+ {
+  "id": "ad078d",
+  "kind": "closed",
+  "status": "נמכר",
   "city": "יהוד",
   "hood": "מרכז",
   "street": "וייצמן",
@@ -11,14 +975,24 @@
   "sqm": "60",
   "features": [],
   "desc": "דירה מעולה למשקיעים",
-  "photos": [],
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1YDjTiEVbdD-E6iZHtwKrdPpQnUyETkkF=w1600",
+   "https://lh3.googleusercontent.com/d/1cQkAYh2J7VbR0gYEo0fesAfdmXUi1fV4=w1600",
+   "https://lh3.googleusercontent.com/d/1_EXfrXIzYKXyVlxoOO_2ku1bqPoNySeG=w1600",
+   "https://lh3.googleusercontent.com/d/1VQ0wqJnYI-_UODXDLtlsUFXGE5eXCPc4=w1600",
+   "https://lh3.googleusercontent.com/d/1Gdx5fYsb_tXtZll-B6Bf3qIEcTkWvguJ=w1600",
+   "https://lh3.googleusercontent.com/d/1n6oqNF5iSxT6DdeksdxI38JwqwfEUAJF=w1600",
+   "https://lh3.googleusercontent.com/d/1pC4Q5Scjd-FAy69OrL8weGh0k2o9J8_T=w1600",
+   "https://lh3.googleusercontent.com/d/1PbmyzjU9mq5fi22WcufoR2NWwlgLxkOA=w1600",
+   "https://lh3.googleusercontent.com/d/1OqzqPKSC1M8DERqcLJXoYvVHaDX_LKtE=w1600"
+  ],
   "date": "",
   "title": "3 חדרים ברחוב וייצמן, יהוד"
  },
  {
   "id": "710af2",
-  "kind": "sale",
-  "status": "למכירה",
+  "kind": "closed",
+  "status": "נמכר",
   "city": "יהוד",
   "hood": "מרכז",
   "street": "הרצל",
@@ -32,14 +1006,26 @@
    "חניה"
   ],
   "desc": "מרפסת לשקיעות מרהיבות",
-  "photos": [],
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1OtQwGJcrC36AuraSAsE2r1vfdU0QD-lK=w1600",
+   "https://lh3.googleusercontent.com/d/1nzeZqgCIay1Lq-to1wHhp9SjqQXWQixH=w1600",
+   "https://lh3.googleusercontent.com/d/1NlBggcTnISqSAWxxD7nuC-tSk_k8IsyK=w1600",
+   "https://lh3.googleusercontent.com/d/108Z_hochjqL_dq8upAkMjFVDZWqF_fLU=w1600",
+   "https://lh3.googleusercontent.com/d/1wj3SBhDpXAIHbvz6EBHgYSBa7ytfJi_u=w1600",
+   "https://lh3.googleusercontent.com/d/1CP1VA-mTRs8ou3fbwuzovXLcW_BQhMsw=w1600",
+   "https://lh3.googleusercontent.com/d/1HxgHa7IKBg16jKC4zmzz88bYZSq6IDF5=w1600",
+   "https://lh3.googleusercontent.com/d/194YR_TIMFFklEZxww8k9GMSQ2sw7Hstj=w1600",
+   "https://lh3.googleusercontent.com/d/13SeGbwIFf8rITkal8dV0hRzSIkSIgZsr=w1600",
+   "https://lh3.googleusercontent.com/d/1b3klSl2ReDARtLIxC80qT9W6Jcjec6yN=w1600",
+   "https://lh3.googleusercontent.com/d/1WEgJjDugMCT-J0Vs3C-2WpH9OsgLByIC=w1600"
+  ],
   "date": "",
   "title": "5 חדרים ברחוב הרצל, יהוד"
  },
  {
   "id": "367f23",
-  "kind": "rent",
-  "status": "להשכרה",
+  "kind": "closed",
+  "status": "הושכר",
   "city": "קרית אונו",
   "hood": "קראון",
   "street": "לוי אשכול",
@@ -53,14 +1039,22 @@
    "חניה"
   ],
   "desc": "3 חדרים בקומה גבוהה ושקטה",
-  "photos": [],
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Blj4rSbI2TPs54cLP2YYTH5mixLWDsf3=w1600",
+   "https://lh3.googleusercontent.com/d/1CmJy16xt_0XoNtz65gLhDvnEZe4bNOmw=w1600",
+   "https://lh3.googleusercontent.com/d/1IsOYJrp3mVquFKgqimPR5X-iCxiHA9Dh=w1600",
+   "https://lh3.googleusercontent.com/d/1vhh3-d1rpXB-YRZSJoiU-u6ewjp2E16w=w1600",
+   "https://lh3.googleusercontent.com/d/11SqD1biLTf7IGWfxItbW2h7g9KqLP0N3=w1600",
+   "https://lh3.googleusercontent.com/d/1kPdivIP2VowAuWPnnMN5BgcNYcFv-qMX=w1600",
+   "https://lh3.googleusercontent.com/d/1-n0wHEvh3R-210XAsV9WOdi4-_FQTMGs=w1600"
+  ],
   "date": "",
   "title": "3 חדרים ברחוב לוי אשכול, קרית אונו"
  },
  {
   "id": "d445b7",
-  "kind": "rent",
-  "status": "להשכרה",
+  "kind": "closed",
+  "status": "הושכר",
   "city": "קרית אונו",
   "hood": "קראון",
   "street": "לוי אשכול",
@@ -75,7 +1069,15 @@
    "חניה"
   ],
   "desc": "3 חדרים מוארת בקומה ראשונה",
-  "photos": [],
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1z3SuXu2BZXeKUJ3p_TG01S42rWGs4kfJ=w1600",
+   "https://lh3.googleusercontent.com/d/186s4SSq3s9R3Zmsp-Oa8Y89cdWbf-f0f=w1600",
+   "https://lh3.googleusercontent.com/d/15SMiAGbIyKr4TEJQj94HQWmZP50Li4ku=w1600",
+   "https://lh3.googleusercontent.com/d/1_PB0EPIHU4RM4lJGPrdFt34BNmAriZsv=w1600",
+   "https://lh3.googleusercontent.com/d/1yyb28zpCHjW22ybSv2BBNCEp9RgEBqp-=w1600",
+   "https://lh3.googleusercontent.com/d/1BQAJfMnwKLK4Yp0B6SkQ5NDT-Qgvwzfe=w1600",
+   "https://lh3.googleusercontent.com/d/1thfXbgegYCZPUNI6awvzkbG4MJHwOA7w=w1600"
+  ],
   "date": "",
   "title": "3 חדרים ברחוב לוי אשכול, קרית אונו"
  }
