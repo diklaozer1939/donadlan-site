@@ -74,6 +74,7 @@ h1{margin:0;font-size:clamp(26px,5vw,38px);line-height:1.2}
 .mini-t small{color:var(--muted)}
 
 footer{background:var(--black);color:var(--on-dark-muted);padding:20px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 18px}
 .sticky-wa{position:fixed;bottom:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--fuchsia);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:18px 16px calc(18px + env(safe-area-inset-bottom));border-top:2px solid var(--gold)}
 @media (min-width:821px){
   body{padding-bottom:0}

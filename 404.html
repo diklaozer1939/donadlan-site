@@ -9,21 +9,23 @@
 <meta property="og:description" content="משרד תיווך בוטיק בפתח תקווה, בקעת אונו והסביבה.">
 <meta property="og:image" content="https://donadlan.co.il/img/og.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/rubik-hebrew-400-normal.woff2" crossorigin>
 <link rel="stylesheet" href="/css/property.css">
+<link rel="stylesheet" href="/css/a11y.css">
 </head>
 <body>
+<a class="skip" href="#app">דילוג לתוכן הראשי</a>
 <header><div class="wrap bar">
   <a class="brand" href="/"><img src="/img/logo.png" alt="דו נדל&quot;ן" width="260" height="162"></a>
   <a class="all" href="/#properties">לכל הנכסים</a>
 </div></header>
-<main class="wrap" id="app"><p class="notfound">טוען...</p></main>
-<footer><div class="wrap">© דו נדל"ן – דקלה עוזר · 055-8836333</div></footer>
+<main class="wrap" id="app" tabindex="-1"><p class="notfound">טוען...</p></main>
+<footer><div class="wrap">© דו נדל"ן – דקלה עוזר · 055-8836333
+  <nav class="legal" aria-label="מידע משפטי"><a href="/accessibility/">הצהרת נגישות</a><a href="/privacy/">מדיניות פרטיות</a></nav></div></footer>
 <a class="sticky-wa" id="sticky" href="https://wa.me/972558836333">דברו איתי בוואטסאפ</a>
 <script src="/js/live.js"></script>
 <script src="/js/gallery.js"></script>
+<script src="/js/a11y.js"></script>
 <script>
 (async () => {
   const app = document.getElementById("app");

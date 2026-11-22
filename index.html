@@ -19,9 +19,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
 <link rel="preload" as="image" href="img/dikla.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/rubik-hebrew-400-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/css/a11y.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -190,11 +189,12 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 </style>
 </head>
 <body>
+<a class="skip" href="#top">דילוג לתוכן הראשי</a>
 
 <header>
   <div class="wrap bar">
     <a class="brand" href="#top"><img src="img/logo.png" alt="דו נדל&quot;ן" width="260" height="162"></a>
-    <nav>
+    <nav aria-label="ניווט ראשי">
       <a href="#properties">נכסים</a>
       <a href="#reviews">המלצות</a>
       <a href="#about">עליי</a>
@@ -204,7 +204,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
   </div>
 </header>
 
-<main id="top">
+<main id="top" tabindex="-1">
 
 <div class="hero">
   <div class="wrap">
@@ -230,12 +230,13 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
   <div class="wrap">
     <h2>נכסים</h2>
     <p class="sub">מחיר ופרטים נוספים, בוואטסאפ. אני עונה בעצמי.</p>
-    <div class="filters" id="filters">
-      <button class="on" data-f="all">הכל</button>
-      <button data-f="sale">למכירה</button>
-      <button data-f="rent">להשכרה</button>
-      <button data-f="closed">נמכרו והושכרו</button>
+    <div class="filters" id="filters" role="group" aria-label="סינון נכסים">
+      <button type="button" class="on" data-f="all" aria-pressed="true">הכל</button>
+      <button type="button" data-f="sale" aria-pressed="false">למכירה</button>
+      <button type="button" data-f="rent" aria-pressed="false">להשכרה</button>
+      <button type="button" data-f="closed" aria-pressed="false">נמכרו והושכרו</button>
     </div>
+    <p class="sr-only" id="count" aria-live="polite"></p>
     <div class="grid" id="grid"><p class="loading">טוען נכסים...</p></div>
   </div>
 </section>
@@ -279,15 +280,16 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 <footer class="site">
   <div class="wrap">
     <span>© דו נדל"ן – דקלה עוזר, מתווכת נדל"ן מוסמכת. רישיון תיווך מס' 30675094</span>
-    <span>פתח תקווה, בקעת אונו והסביבה</span>
+    <nav class="legal" aria-label="מידע משפטי"><a href="/accessibility/">הצהרת נגישות</a><a href="/privacy/">מדיניות פרטיות</a></nav>
   </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/972558836333" aria-label="וואטסאפ">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg>
+<a class="float-wa" href="https://wa.me/972558836333" aria-label="שליחת הודעה בוואטסאפ">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg>
 </a>
 
 <script src="/js/live.js"></script>
+<script src="/js/a11y.js"></script>
 <script>
 const WA = "972558836333";
 const SITE = "https://donadlan.co.il";
@@ -308,20 +310,20 @@ function card(p){
   if(p.floor) facts.push(`קומה ${esc(p.floor)}`);
   if(p.sqm) facts.push(`${esc(p.sqm)} מ"ר`);
   const thumb = p.photos[0] ? p.photos[0].replace(/=w1600$/,"=w800") : "";
-  const img = thumb ? `<img referrerpolicy="no-referrer" src="${esc(thumb)}" alt="${esc(p.title)}" loading="lazy">` : `<div class="ph"><img src="img/mono.png" alt=""><b>${esc(p.city)}</b>${p.hood?`<small>${esc(p.hood)}</small>`:""}</div>`;
+  const img = thumb ? `<img referrerpolicy="no-referrer" src="${esc(thumb)}" alt="" loading="lazy">` : `<div class="ph"><img src="img/mono.png" alt=""><b>${esc(p.city)}</b>${p.hood?`<small>${esc(p.hood)}</small>`:""}</div>`;
   const msg = encodeURIComponent(`היי דקלה, ראיתי באתר את הנכס: ${p.title} (${p.status}). אשמח לפרטים ${SITE}${url}`);
   const btn = k==="closed"
     ? `<a class="btn btn-ghost" href="https://wa.me/${WA}?text=${encodeURIComponent("היי דקלה, יש לי דירה ב"+p.city+" ואשמח לשמוע ממך")}">יש לכם דירה דומה? דברו איתי</a>`
-    : `<a class="btn btn-wa" href="https://wa.me/${WA}?text=${msg}">לפרטים ומחיר בוואטסאפ</a>`;
+    : `<a class="btn btn-wa" href="https://wa.me/${WA}?text=${msg}">לפרטים ומחיר בוואטסאפ<span class="sr-only"> על ${esc(p.title)}</span></a>`;
   return `<article class="card" data-k="${k}">
-    <a class="pic" href="${url}">${img}${k==="closed"?`<span class="ribbon">${esc(p.status)}</span>`:`<span class="badge">${esc(p.status)}</span>`}${p.photos.length>1?`<span class="count">${p.photos.length} תמונות</span>`:""}</a>
+    <a class="pic" href="${url}" tabindex="-1" aria-hidden="true">${img}${k==="closed"?`<span class="ribbon">${esc(p.status)}</span>`:`<span class="badge">${esc(p.status)}</span>`}${p.photos.length>1?`<span class="count">${p.photos.length} תמונות</span>`:""}</a>
     <div class="body">
       <div class="loc">${esc(loc)}</div>
-      <h3><a href="${url}">${esc(p.street?`רחוב ${p.street}`:p.city)}</a></h3>
+      <h3><a href="${url}">${esc(p.street?`רחוב ${p.street}`:p.city)}<span class="sr-only">, ${esc(p.status)}</span></a></h3>
       <div class="facts">${facts.map(f=>`<span>${f}</span>`).join("")}</div>
       <div class="feat">${p.features.map(f=>`<span>${esc(f)}</span>`).join("")}</div>
       ${p.desc?`<p class="desc">${esc(p.desc)}</p>`:""}
-      <a class="details" href="${url}">לכל הפרטים והתמונות</a>
+      <a class="details" href="${url}">לכל הפרטים והתמונות<span class="sr-only"> של ${esc(p.title)}</span></a>
       ${btn}
     </div>
   </article>`;
@@ -329,11 +331,12 @@ function card(p){
 function renderProps(f){
   const grid=document.getElementById("grid");
   const list = PROPS.filter(p=>f==="all"||p.kind===f);
+  document.getElementById("count").textContent = list.length ? `מוצגים ${list.length} נכסים` : "אין נכסים בקטגוריה הזו";
   grid.innerHTML = list.length ? list.map(card).join("") : `<p class="empty">כרגע אין נכסים בקטגוריה הזו. <a href="https://wa.me/${WA}">כתבו לי</a> מה אתם מחפשים.</p>`;
 }
 document.getElementById("filters").addEventListener("click",e=>{
   const b=e.target.closest("button"); if(!b) return;
-  document.querySelectorAll("#filters button").forEach(x=>x.classList.toggle("on",x===b));
+  document.querySelectorAll("#filters button").forEach(x=>{x.classList.toggle("on",x===b);x.setAttribute("aria-pressed",String(x===b));});
   renderProps(b.dataset.f);
 });
 
@@ -346,13 +349,13 @@ function renderReviews(rows){
     const shortT = long ? text.slice(0,text.lastIndexOf(" ",240))+"..." : text;
     return `<blockquote>
       <p data-full="${esc(text)}">${esc(shortT)}</p>
-      ${long?`<button class="more">להמשך</button>`:""}
+      ${long?`<button type="button" class="more" aria-label="להמשך ההמלצה של ${esc(r.name)}">להמשך</button>`:""}
       <footer><b>${esc(r.name)}</b>${r.type?` · ${esc(r.type)}`:""}${place?` · ${esc(place)}`:""}</footer>
     </blockquote>`;
   }).join("");
   el.addEventListener("click",e=>{
     if(!e.target.classList.contains("more")) return;
-    const p=e.target.previousElementSibling; p.textContent=p.dataset.full; e.target.remove();
+    const p=e.target.previousElementSibling; p.textContent=p.dataset.full; p.setAttribute("tabindex","-1"); e.target.remove(); p.focus();
   });
 }
 

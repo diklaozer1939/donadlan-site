@@ -117,8 +117,8 @@ function propertyPage(l, others) {
     : `היי דקלה, ראיתי באתר את הנכס: ${l.title} (${l.status}). אשמח לפרטים ${pageUrl(l)}`;
   const waLabel = closed ? "יש לכם דירה דומה? דברו איתי" : "לפרטים ומחיר בוואטסאפ";
   const gallery = l.photos.length
-    ? `<div class="gallery">${l.photos.map((p, i) => `<img referrerpolicy="no-referrer" src="${esc(p)}" alt="${esc(l.title)}, תמונה ${i + 1}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`).join("")}</div>
-       ${l.photos.length > 1 ? `<p class="swipe">${l.photos.length} תמונות · החליקו לצד</p>` : ""}`
+    ? `<div class="gallery" tabindex="0" role="region" aria-label="תמונות הנכס, ${l.photos.length} תמונות">${l.photos.map((p, i) => `<img referrerpolicy="no-referrer" src="${esc(p)}" alt="${esc(l.title)}, תמונה ${i + 1}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`).join("")}</div>
+       ${l.photos.length > 1 ? `<p class="swipe" aria-live="polite">${l.photos.length} תמונות · החליקו לצד</p>` : ""}`
     : `<div class="gallery empty"><div class="ph"><img src="/img/mono.png" alt=""><b>${esc(l.city)}</b>${l.hood ? `<small>${esc(l.hood)}</small>` : ""}</div></div>`;
   const ld = {
     "@context": "https://schema.org", "@type": "RealEstateListing", name: `${l.status}: ${l.title}`,
@@ -148,19 +148,19 @@ function propertyPage(l, others) {
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/rubik-hebrew-400-normal.woff2" crossorigin>
 <link rel="stylesheet" href="/css/property.css">
+<link rel="stylesheet" href="/css/a11y.css">
 <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>
 </head>
 <body>
+<a class="skip" href="#content">דילוג לתוכן הראשי</a>
 <header><div class="wrap bar">
   <a class="brand" href="/"><img src="/img/logo.png" alt="דו נדל&quot;ן" width="260" height="162"></a>
   <a class="all" href="/#properties">לכל הנכסים</a>
 </div></header>
 
-<main class="wrap">
+<main class="wrap" id="content" tabindex="-1">
   <section class="hero${closed ? " closed" : ""}">
     ${gallery}
     ${closed ? `<span class="ribbon">${esc(l.status)}</span>` : ""}
@@ -196,9 +196,11 @@ function propertyPage(l, others) {
   ${more ? `<section class="more"><h2>עוד נכסים</h2><div class="minis">${more}</div><a class="all" href="/#properties">לכל הנכסים</a></section>` : ""}
 </main>
 
-<footer><div class="wrap">© דו נדל"ן – דקלה עוזר · ${PHONE}</div></footer>
+<footer><div class="wrap">© דו נדל"ן – דקלה עוזר · ${PHONE}
+  <nav class="legal" aria-label="מידע משפטי"><a href="/accessibility/">הצהרת נגישות</a><a href="/privacy/">מדיניות פרטיות</a></nav></div></footer>
 <a class="sticky-wa" href="${esc(waLink(waText))}">${waLabel}</a>
 <script src="/js/gallery.js"></script>
+<script src="/js/a11y.js"></script>
 <script>
 dnGallery();
 document.querySelector(".share").addEventListener("click", async e => {
@@ -264,7 +266,7 @@ async function main() {
     if (l.oldId !== l.id) await writeIfChanged(`n/${l.oldId}/index.html`, page); // canonical points to the new link
   }
 
-  const urls = [`${SITE}/`, ...list.map(pageUrl)];
+  const urls = [`${SITE}/`, ...list.map(pageUrl), `${SITE}/accessibility/`, `${SITE}/privacy/`];
   await writeIfChanged("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   console.log(`done: ${list.length} listings, ${reviews.length} reviews`);
 }

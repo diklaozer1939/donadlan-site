@@ -9,7 +9,8 @@ function dnGallery(root) {
   const idx = () => Math.round(Math.abs(g.scrollLeft) / g.clientWidth);
   const go = i => {
     i = (i + imgs.length) % imgs.length;
-    g.scrollTo({ left: -i * g.clientWidth, behavior: "smooth" }); // RTL: later photos are to the left
+    const still = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("a11y-stop");
+    g.scrollTo({ left: -i * g.clientWidth, behavior: still ? "auto" : "smooth" }); // RTL: later photos are to the left
   };
   const btn = (cls, label, d) => {
     const b = document.createElement("button");
@@ -23,6 +24,8 @@ function dnGallery(root) {
   const update = () => { if (counter) counter.textContent = `${idx() + 1} / ${imgs.length}`; };
   g.addEventListener("scroll", () => requestAnimationFrame(update), { passive: true });
   document.addEventListener("keydown", e => {
+    const t = e.target;
+    if (t.closest && t.closest("input, textarea, select, [contenteditable], .a11y-panel")) return;
     if (e.key === "ArrowLeft") go(idx() + 1);
     if (e.key === "ArrowRight") go(idx() - 1);
   });

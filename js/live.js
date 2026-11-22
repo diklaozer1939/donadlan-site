@@ -135,8 +135,8 @@
     const label = closed ? "יש לכם דירה דומה? דברו איתי" : "לפרטים ומחיר בוואטסאפ";
     let gallery;
     if (l.photos.length) {
-      gallery = `<div class="gallery">${l.photos.map((p, i) => `<img referrerpolicy="no-referrer" src="${esc(p)}" alt="${esc(l.title)}, תמונה ${i + 1}">`).join("")}</div>
-        ${l.photos.length > 1 ? `<p class="swipe">${l.photos.length} תמונות · החליקו לצד</p>` : ""}`;
+      gallery = `<div class="gallery" tabindex="0" role="region" aria-label="תמונות הנכס, ${l.photos.length} תמונות">${l.photos.map((p, i) => `<img referrerpolicy="no-referrer" src="${esc(p)}" alt="${esc(l.title)}, תמונה ${i + 1}">`).join("")}</div>
+        ${l.photos.length > 1 ? `<p class="swipe" aria-live="polite">${l.photos.length} תמונות · החליקו לצד</p>` : ""}`;
     } else if (l.folder) {
       gallery = `<iframe class="folder" src="https://drive.google.com/embeddedfolderview?id=${esc(l.folder)}#grid" title="תמונות הנכס" loading="lazy"></iframe>`;
     } else {
