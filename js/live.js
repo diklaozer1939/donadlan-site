@@ -73,6 +73,20 @@
   }
 
   // Live rows from the sheet, with photos taken from the last build where it has them.
+  // Weekly order (Israel weeks start Sunday): newest open listing pinned first,
+  // other open listings rotate one step every week, closed ones by date (newest first).
+  function weeklyOrder(list) {
+    const byNew = (a, b) => parseDate(b.date) - parseDate(a.date) || b.order - a.order;
+    const open = list.filter(l => l.kind !== "closed").sort(byNew);
+    const closed = list.filter(l => l.kind === "closed").sort(byNew);
+    if (open.length < 3) return [...open, ...closed];
+    const [pinned, ...rest] = open;
+    rest.sort((a, b) => a.id.localeCompare(b.id));
+    const days = Math.floor((Date.now() + 2 * 3600e3) / 864e5);
+    const week = Math.floor((days + 4) / 7);
+    const k = week % rest.length;
+    return [pinned, ...rest.slice(k), ...rest.slice(0, k), ...closed];
+  }
   async function loadListings() {
     const builtP = json("/data/listings.json").catch(() => []);
     let rows;
@@ -80,7 +94,7 @@
     let list = (await Promise.all(rows.map(toListing))).filter(Boolean);
     const seen = new Map();
     for (const l of list) { const n = (seen.get(l.id) || 0) + 1; seen.set(l.id, n); if (n > 1) { l.id += "-" + n; l.oldId += "-" + n; } }
-    list.sort((a, b) => (a.kind === "closed") - (b.kind === "closed") || parseDate(b.date) - parseDate(a.date) || b.order - a.order);
+    list = weeklyOrder(list);
     const built = new Map((await builtP).map(b => [b.id, b]));
     return list.map(({ order, ...l }) => {
       const b = built.get(l.id);

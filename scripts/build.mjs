@@ -220,13 +220,26 @@ async function writeIfChanged(file, content) {
   console.log("  wrote", file);
 }
 
+// Weekly order (Israel weeks start Sunday): newest open listing pinned first,
+// other open listings rotate one step every week, closed ones by date (newest first).
+function weeklyOrder(list) {
+  const byNew = (a, b) => parseDate(b.date) - parseDate(a.date) || b.order - a.order;
+  const open = list.filter(l => l.kind !== "closed").sort(byNew);
+  const closed = list.filter(l => l.kind === "closed").sort(byNew);
+  if (open.length < 3) return [...open, ...closed];
+  const [pinned, ...rest] = open;
+  rest.sort((a, b) => a.id.localeCompare(b.id));
+  const days = Math.floor((Date.now() + 2 * 3600e3) / 864e5);
+  const week = Math.floor((days + 4) / 7);
+  const k = week % rest.length;
+  return [pinned, ...rest.slice(k), ...rest.slice(0, k), ...closed];
+}
 async function main() {
   const [propRows, reviewRows] = await Promise.all([sheet(GID_PROPS), sheet(GID_REVIEWS)]);
   let list = (await Promise.all(propRows.map(toListing))).filter(Boolean);
   const seen = new Map();
   for (const l of list) { const n = (seen.get(l.id) || 0) + 1; seen.set(l.id, n); if (n > 1) { l.id += "-" + n; l.oldId += "-" + n; } }
-  // open listings first, newest first (by date, else lower in the sheet = newer)
-  list.sort((a, b) => (a.kind === "closed") - (b.kind === "closed") || parseDate(b.date) - parseDate(a.date) || b.order - a.order);
+  list = weeklyOrder(list);
   list = list.map(({ order, ...l }) => l);
 
   const reviews = reviewRows.map(r => {
