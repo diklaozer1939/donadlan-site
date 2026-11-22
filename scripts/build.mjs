@@ -1,6 +1,7 @@
 // Builds a page per property from the Google Sheet, so every listing has its own link
 // (for Facebook posts) with a WhatsApp button. Runs in GitHub Actions on a schedule.
-// Output: data/listings.json, data/reviews.json, n/<id>/index.html, sitemap.xml, links.html
+// Output: data/listings.json, data/reviews.json, n/<id>/index.html, sitemap.xml
+// (links.html, 404.html and the homepage read the sheet live through js/live.js)
 import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -95,18 +96,6 @@ async function toListing(r, i) {
 const waLink = text => `https://wa.me/${WA}?text=${encodeURIComponent(text)}`;
 const pageUrl = l => `${SITE}/n/${l.id}/`;
 const factsList = l => [l.sqm && `${l.sqm} מ"ר`, l.floor && `קומה ${l.floor}`, ...l.features];
-
-function postText(l) {
-  return [
-    `${l.status} | ${l.title}`,
-    [l.hood, l.city].filter(Boolean).join(", "),
-    factsList(l).join(" · "),
-    l.desc,
-    "",
-    `לתמונות ופרטים: ${pageUrl(l)}`,
-    `דקלה עוזר, דו נדל"ן · ${PHONE}`,
-  ].filter((x, i) => x !== "" || i === 4).join("\n");
-}
 
 function propertyPage(l, others) {
   const closed = l.kind === "closed";
@@ -211,41 +200,6 @@ document.querySelector(".share").addEventListener("click", async e => {
 `;
 }
 
-function linksPage(list) {
-  const rows = list.map(l => `<article>
-    <div><b>${esc(l.status)} · ${esc(l.title)}</b><a href="/n/${l.id}/">${pageUrl(l)}</a></div>
-    <textarea readonly rows="7">${esc(postText(l))}</textarea>
-    <div class="b"><button data-copy="${esc(pageUrl(l))}">העתקת קישור</button><button data-post>העתקת פוסט מוכן</button></div>
-  </article>`).join("\n");
-  return `<!DOCTYPE html>
-<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow"><title>קישורים לפרסום | דו נדל"ן</title>
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#FBF8F2;color:#2B2620}
-main{max-width:760px;margin:0 auto;padding:20px 16px 60px}
-h1{font-size:24px;margin:0 0 4px}p.s{color:#6E655A;margin:0 0 20px}
-article{background:#fff;border:1px solid #E7DFCF;border-radius:14px;padding:16px;margin-bottom:14px;display:flex;flex-direction:column;gap:10px}
-article a{display:block;color:#8A6A22;font-size:14px;direction:ltr;text-align:right;word-break:break-all}
-textarea{width:100%;box-sizing:border-box;font:inherit;font-size:14px;border:1px solid #E7DFCF;border-radius:8px;padding:8px;resize:vertical}
-.b{display:flex;gap:8px;flex-wrap:wrap}
-button{font:inherit;font-size:15px;border:0;border-radius:999px;padding:10px 18px;background:#D4147A;color:#fff;cursor:pointer}
-button+button{background:#121012}
-</style></head><body><main>
-<h1>קישורים לפרסום בפייסבוק</h1>
-<p class="s">הדף הזה לא מופיע באתר ולא בגוגל. הוא מתעדכן לבד מהגיליון.</p>
-${rows || "<p>אין כרגע נכסים פעילים.</p>"}
-</main>
-<script>
-document.addEventListener("click", async e => {
-  const b = e.target.closest("button"); if (!b) return;
-  const text = b.dataset.copy || b.closest("article").querySelector("textarea").value;
-  try { await navigator.clipboard.writeText(text); } catch (_) { const t = b.closest("article").querySelector("textarea"); t.select(); document.execCommand("copy"); }
-  const old = b.textContent; b.textContent = "הועתק ✓"; setTimeout(() => b.textContent = old, 1500);
-});
-</script></body></html>
-`;
-}
-
 async function writeIfChanged(file, content) {
   const full = path.join(ROOT, file);
   await fs.mkdir(path.dirname(full), { recursive: true });
@@ -285,7 +239,6 @@ async function main() {
 
   const urls = [`${SITE}/`, ...list.map(pageUrl)];
   await writeIfChanged("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${u}</loc></url>`).join("\n")}\n</urlset>\n`);
-  await writeIfChanged("links.html", linksPage(list.filter(l => l.kind !== "closed")));
   console.log(`done: ${list.length} listings, ${reviews.length} reviews`);
 }
 

@@ -3,22 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>הנכס כבר לא כאן | דו נדל"ן</title>
+<title>דו נדל"ן – דקלה עוזר</title>
 <meta name="robots" content="noindex">
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#FBF5EC;color:#2B2620;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box}
-img{width:180px;margin:0 auto 12px;display:block}
-a{display:inline-block;margin:8px 4px;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:bold}
-.wa{background:#D4147A;color:#fff}.home{border:1.5px solid #C9A24E;color:#8A6A22}
-</style>
+<meta property="og:title" content="דקלה עוזר | דו נדל&quot;ן">
+<meta property="og:description" content="תיווך נדל&quot;ן בכפר גנים, פתח תקווה ובקעת אונו. שקיפות מלאה, והכל בכתב.">
+<meta property="og:image" content="https://donadlan.co.il/img/og.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/property.css">
 </head>
 <body>
-<main>
-<img src="/img/logo.png" alt="דו נדל&quot;ן">
-<h1>הנכס הזה כבר לא באתר</h1>
-<p>כנראה שהוא נמכר או הושכר. יש לי עוד נכסים, ואשמח לעזור לכם למצוא.</p>
-<a class="wa" href="https://wa.me/972558836333?text=%D7%94%D7%99%D7%99%20%D7%93%D7%A7%D7%9C%D7%94%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8">דברו איתי בוואטסאפ</a>
-<a class="home" href="/#properties">לכל הנכסים</a>
-</main>
+<header><div class="wrap bar">
+  <a class="brand" href="/"><img src="/img/logo.png" alt="דו נדל&quot;ן" width="260" height="162"></a>
+  <a class="all" href="/#properties">לכל הנכסים</a>
+</div></header>
+<main class="wrap" id="app"><p class="notfound">טוען...</p></main>
+<footer><div class="wrap">© דו נדל"ן – דקלה עוזר · 055-8836333</div></footer>
+<a class="sticky-wa" id="sticky" href="https://wa.me/972558836333">דברו איתי בוואטסאפ</a>
+<script src="/js/live.js"></script>
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  const notFound = () => {
+    app.innerHTML = `<div class="notfound"><img src="/img/logo.png" alt="">
+      <h1>הדף הזה לא נמצא</h1>
+      <p>ייתכן שהנכס כבר נמכר או הושכר. יש לי עוד נכסים, ואשמח לעזור לכם למצוא.</p>
+      <a class="btn wa" href="https://wa.me/${DN.WA}">דברו איתי בוואטסאפ</a>
+      <a class="btn ghost" href="/#properties">לכל הנכסים</a></div>`;
+  };
+  const m = location.pathname.match(/^\/n\/([\w-]+)\/?$/);
+  if (!m) return notFound();
+  const list = await DN.loadListings();
+  const l = list.find(x => x.id === m[1]);
+  if (!l) return notFound();
+  document.title = `${l.status}: ${l.title} | דו נדל"ן`;
+  app.innerHTML = DN.renderProperty(l, list.filter(o => o.id !== l.id && o.kind !== "closed"));
+  const s = document.getElementById("sticky");
+  s.href = DN.waLink(DN.waText(l));
+  s.textContent = l.kind === "closed" ? "יש לכם דירה דומה? דברו איתי" : "לפרטים ומחיר בוואטסאפ";
+  app.querySelector(".share").addEventListener("click", async e => {
+    const b = e.currentTarget, url = b.dataset.url, title = b.dataset.title;
+    try { if (navigator.share) { await navigator.share({ title, url }); return; } } catch (_) { return; }
+    try { await navigator.clipboard.writeText(url); b.textContent = "הקישור הועתק"; } catch (_) { prompt("העתיקו את הקישור:", url); }
+  });
+})();
+</script>
 </body>
 </html>

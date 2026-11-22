@@ -27,7 +27,7 @@ jobs:
       - run: node scripts/build.mjs
       - name: שמירת שינויים
         run: |
-          git add -A data n sitemap.xml links.html
+          git add -A data n sitemap.xml
           if git diff --cached --quiet; then echo "אין שינויים"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
