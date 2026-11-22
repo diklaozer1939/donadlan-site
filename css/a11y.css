@@ -47,7 +47,7 @@ html.a11y-links a{text-decoration:underline !important;text-underline-offset:3px
 html.a11y-font body,html.a11y-font button{font-family:Arial,Helvetica,sans-serif !important;letter-spacing:.02em;word-spacing:.08em}
 html.a11y-contrast body{background:#000 !important;color:#fff !important}
 html.a11y-contrast body *:not(img):not(svg):not(path):not(.a11y-panel):not(.a11y-panel *){background-color:#000 !important;background-image:none !important;color:#fff !important;border-color:#fff !important;box-shadow:none !important;text-shadow:none !important}
-html.a11y-contrast a,html.a11y-contrast a *{color:#FFEB3B !important}
+html.a11y-contrast a:not(.a11y-panel a),html.a11y-contrast a:not(.a11y-panel a) *{color:#FFEB3B !important}
 html.a11y-contrast img{filter:none}
 html.a11y-stop *,html.a11y-stop *::before,html.a11y-stop *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
 
