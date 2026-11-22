@@ -1,21 +1,21 @@
 [
  {
-  "id": "1k22is",
-  "oldId": "b64de8",
+  "id": "fvalx3",
+  "oldId": "6bb3de",
   "kind": "rent",
   "status": "להשכרה",
   "city": "פתח תקווה",
   "hood": "",
   "street": "צ'לנוב",
   "rooms": "4",
-  "floor": "",
-  "sqm": "",
+  "floor": "2",
+  "sqm": "90",
   "features": [
    "מרפסת",
    "ממ\"ד",
    "מעלית"
   ],
-  "desc": "4 חדרים מרווחת עם ממ\"ד ומרפסת שמש ארוכה שמשקיפה לרחוב ירוק. מטבח גדול עם פינת אוכל וחדר שינה מואר עם שני חלונות. לטווח ארוך.",
+  "desc": "4 חדרים מרווחת עם ממ\"ד ומרפסת שמש ארוכה ומפנקת. מטבח גדול עם פינת אוכל וחדר שינה מואר עם שני חלונות. לטווח ארוך.",
   "photos": [
    "https://lh3.googleusercontent.com/d/1L9oIvbGCleND0F1hlmy7OxoMjKmknRDT=w1600",
    "https://lh3.googleusercontent.com/d/1OP4-okvflKQwM9CCND4iAc1agUKhWLP-=w1600",
