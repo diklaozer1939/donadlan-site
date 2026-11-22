@@ -289,6 +289,35 @@
   "title": "רחוב בן איש חי, אור יהודה"
  },
  {
+  "id": "efm1di",
+  "oldId": "f7a7b3",
+  "kind": "closed",
+  "status": "נמכר",
+  "city": "פתח תקווה",
+  "hood": "רמת ורבר",
+  "street": "הנס אנדרסן",
+  "rooms": "4",
+  "floor": "5",
+  "sqm": "110",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Kgjl2-PHfttJqQdklqKVm-mkOCpXDGOd=w1600",
+   "https://lh3.googleusercontent.com/d/163yWMmIUzbzEoo5FKJ1V5khF5MlZGJcQ=w1600",
+   "https://lh3.googleusercontent.com/d/1k7BiOuipgUUo5fpLizWa2_HvFg8TmjWU=w1600",
+   "https://lh3.googleusercontent.com/d/1NPMhITpsVqDhUynUxbvZ4cX5NjoZPBPG=w1600",
+   "https://lh3.googleusercontent.com/d/1lvu_eR21aOz48z6_f_tRzlnKtUwqhINq=w1600",
+   "https://lh3.googleusercontent.com/d/1Rgb0FikYqdXQ5izIvjkH5gkXZSJs-mHA=w1600"
+  ],
+  "date": "20.11.2026",
+  "title": "4 חדרים ברחוב הנס אנדרסן, פתח תקווה"
+ },
+ {
   "id": "iqd5rn-2",
   "oldId": "201beb-2",
   "kind": "closed",
@@ -312,8 +341,69 @@
    "https://lh3.googleusercontent.com/d/18zpy1n2zy6jGw_rdyl6M07G4y-3holUu=w1600",
    "https://lh3.googleusercontent.com/d/1xfG6s9tF6RAIjtTFR_XvG084-wqIS04J=w1600"
   ],
-  "date": "",
+  "date": "19.11.2026",
   "title": "4 חדרים ברחוב יטקובסקי אחים, פתח תקווה"
+ },
+ {
+  "id": "tbtzhj",
+  "oldId": "d445b7",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "3",
+  "floor": "1",
+  "sqm": "75",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "חניה"
+  ],
+  "desc": "3 חדרים מוארת בקומה ראשונה",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1z3SuXu2BZXeKUJ3p_TG01S42rWGs4kfJ=w1600",
+   "https://lh3.googleusercontent.com/d/186s4SSq3s9R3Zmsp-Oa8Y89cdWbf-f0f=w1600",
+   "https://lh3.googleusercontent.com/d/15SMiAGbIyKr4TEJQj94HQWmZP50Li4ku=w1600",
+   "https://lh3.googleusercontent.com/d/1_PB0EPIHU4RM4lJGPrdFt34BNmAriZsv=w1600",
+   "https://lh3.googleusercontent.com/d/1yyb28zpCHjW22ybSv2BBNCEp9RgEBqp-=w1600",
+   "https://lh3.googleusercontent.com/d/1BQAJfMnwKLK4Yp0B6SkQ5NDT-Qgvwzfe=w1600",
+   "https://lh3.googleusercontent.com/d/1thfXbgegYCZPUNI6awvzkbG4MJHwOA7w=w1600"
+  ],
+  "date": "18.11.2026",
+  "title": "3 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "tbu4j1",
+  "oldId": "367f23",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "3",
+  "floor": "7",
+  "sqm": "75",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "3 חדרים בקומה גבוהה ושקטה",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Blj4rSbI2TPs54cLP2YYTH5mixLWDsf3=w1600",
+   "https://lh3.googleusercontent.com/d/1CmJy16xt_0XoNtz65gLhDvnEZe4bNOmw=w1600",
+   "https://lh3.googleusercontent.com/d/1IsOYJrp3mVquFKgqimPR5X-iCxiHA9Dh=w1600",
+   "https://lh3.googleusercontent.com/d/1vhh3-d1rpXB-YRZSJoiU-u6ewjp2E16w=w1600",
+   "https://lh3.googleusercontent.com/d/11SqD1biLTf7IGWfxItbW2h7g9KqLP0N3=w1600",
+   "https://lh3.googleusercontent.com/d/1kPdivIP2VowAuWPnnMN5BgcNYcFv-qMX=w1600",
+   "https://lh3.googleusercontent.com/d/1-n0wHEvh3R-210XAsV9WOdi4-_FQTMGs=w1600"
+  ],
+  "date": "17.11.2026",
+  "title": "3 חדרים ברחוב לוי אשכול, קרית אונו"
  },
  {
   "id": "30f2i5",
@@ -857,35 +947,6 @@
   "title": "4 חדרים ברחוב טרומפלדור, פתח תקווה"
  },
  {
-  "id": "efm1di",
-  "oldId": "f7a7b3",
-  "kind": "closed",
-  "status": "נמכר",
-  "city": "פתח תקווה",
-  "hood": "רמת ורבר",
-  "street": "הנס אנדרסן",
-  "rooms": "4",
-  "floor": "5",
-  "sqm": "110",
-  "features": [
-   "מרפסת",
-   "ממ\"ד",
-   "מחסן",
-   "חניה"
-  ],
-  "desc": "",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1Kgjl2-PHfttJqQdklqKVm-mkOCpXDGOd=w1600",
-   "https://lh3.googleusercontent.com/d/163yWMmIUzbzEoo5FKJ1V5khF5MlZGJcQ=w1600",
-   "https://lh3.googleusercontent.com/d/1k7BiOuipgUUo5fpLizWa2_HvFg8TmjWU=w1600",
-   "https://lh3.googleusercontent.com/d/1NPMhITpsVqDhUynUxbvZ4cX5NjoZPBPG=w1600",
-   "https://lh3.googleusercontent.com/d/1lvu_eR21aOz48z6_f_tRzlnKtUwqhINq=w1600",
-   "https://lh3.googleusercontent.com/d/1Rgb0FikYqdXQ5izIvjkH5gkXZSJs-mHA=w1600"
-  ],
-  "date": "",
-  "title": "4 חדרים ברחוב הנס אנדרסן, פתח תקווה"
- },
- {
   "id": "c48tco",
   "oldId": "1a9d09",
   "kind": "closed",
@@ -1058,66 +1119,5 @@
   ],
   "date": "",
   "title": "5 חדרים ברחוב הרצל, יהוד"
- },
- {
-  "id": "tbu4j1",
-  "oldId": "367f23",
-  "kind": "closed",
-  "status": "הושכר",
-  "city": "קרית אונו",
-  "hood": "קראון",
-  "street": "לוי אשכול",
-  "rooms": "3",
-  "floor": "7",
-  "sqm": "75",
-  "features": [
-   "מרפסת",
-   "ממ\"ד",
-   "מחסן",
-   "חניה"
-  ],
-  "desc": "3 חדרים בקומה גבוהה ושקטה",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1Blj4rSbI2TPs54cLP2YYTH5mixLWDsf3=w1600",
-   "https://lh3.googleusercontent.com/d/1CmJy16xt_0XoNtz65gLhDvnEZe4bNOmw=w1600",
-   "https://lh3.googleusercontent.com/d/1IsOYJrp3mVquFKgqimPR5X-iCxiHA9Dh=w1600",
-   "https://lh3.googleusercontent.com/d/1vhh3-d1rpXB-YRZSJoiU-u6ewjp2E16w=w1600",
-   "https://lh3.googleusercontent.com/d/11SqD1biLTf7IGWfxItbW2h7g9KqLP0N3=w1600",
-   "https://lh3.googleusercontent.com/d/1kPdivIP2VowAuWPnnMN5BgcNYcFv-qMX=w1600",
-   "https://lh3.googleusercontent.com/d/1-n0wHEvh3R-210XAsV9WOdi4-_FQTMGs=w1600"
-  ],
-  "date": "",
-  "title": "3 חדרים ברחוב לוי אשכול, קרית אונו"
- },
- {
-  "id": "tbtzhj",
-  "oldId": "d445b7",
-  "kind": "closed",
-  "status": "הושכר",
-  "city": "קרית אונו",
-  "hood": "קראון",
-  "street": "לוי אשכול",
-  "rooms": "3",
-  "floor": "1",
-  "sqm": "75",
-  "features": [
-   "מרפסת",
-   "ממ\"ד",
-   "מחסן",
-   "מעלית",
-   "חניה"
-  ],
-  "desc": "3 חדרים מוארת בקומה ראשונה",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1z3SuXu2BZXeKUJ3p_TG01S42rWGs4kfJ=w1600",
-   "https://lh3.googleusercontent.com/d/186s4SSq3s9R3Zmsp-Oa8Y89cdWbf-f0f=w1600",
-   "https://lh3.googleusercontent.com/d/15SMiAGbIyKr4TEJQj94HQWmZP50Li4ku=w1600",
-   "https://lh3.googleusercontent.com/d/1_PB0EPIHU4RM4lJGPrdFt34BNmAriZsv=w1600",
-   "https://lh3.googleusercontent.com/d/1yyb28zpCHjW22ybSv2BBNCEp9RgEBqp-=w1600",
-   "https://lh3.googleusercontent.com/d/1BQAJfMnwKLK4Yp0B6SkQ5NDT-Qgvwzfe=w1600",
-   "https://lh3.googleusercontent.com/d/1thfXbgegYCZPUNI6awvzkbG4MJHwOA7w=w1600"
-  ],
-  "date": "",
-  "title": "3 חדרים ברחוב לוי אשכול, קרית אונו"
  }
 ]
