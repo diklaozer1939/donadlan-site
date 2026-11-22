@@ -37,8 +37,9 @@
   const m = location.pathname.match(/^\/n\/([\w-]+)\/?$/);
   if (!m) return notFound();
   const list = await DN.loadListings();
-  const l = list.find(x => x.id === m[1]);
+  const l = list.find(x => x.id === m[1] || x.oldId === m[1]);
   if (!l) return notFound();
+  if (l.id !== m[1]) { location.replace(`/n/${l.id}/`); return; }
   document.title = `${l.status}: ${l.title} | דו נדל"ן`;
   app.innerHTML = DN.renderProperty(l, list.filter(o => o.id !== l.id && o.kind !== "closed"));
   dnGallery(app);

@@ -36,6 +36,14 @@ async function sheet(gid) {
   return parseCSV(await r.text()).slice(1).filter(r => r.some(c => clean(c)));
 }
 
+// Same hash as the formula in the sheet's link column (keep the two in step):
+// REDUCE(5381, ..., MOD(a*33 + UNICODE(char), 2147483647)), written in base 36.
+function linkId(key) {
+  let a = 5381;
+  for (let i = 0; i < key.length; i++) a = (a * 33 + key.charCodeAt(i)) % 2147483647;
+  return a.toString(36);
+}
+
 function kind(st) {
   if (st.includes("נמכר") || st.includes("הושכר")) return "closed";
   if (st.includes("השכר")) return "rent";
@@ -85,10 +93,12 @@ async function toListing(r, i) {
   if (elevator === "יש") feat.push("מעלית");
   const pk = parking === "" ? "1" : parking;
   if (pk === "1") feat.push("חניה"); else if (pk !== "0") feat.push(`${pk} חניות`);
-  const id = crypto.createHash("sha1").update(`${city}|${street}|${floor}|${rooms}`).digest("hex").slice(0, 6);
+  const key = `${city}|${street}|${floor}|${rooms}`;
+  const id = linkId(key);
+  const oldId = crypto.createHash("sha1").update(key).digest("hex").slice(0, 6); // links shared before Nov 22 2026
   const title = (rooms ? `${rooms} חדרים${street ? ` ברחוב ${street}` : ""}` : (street ? `רחוב ${street}` : "")) + (city ? (rooms || street ? `, ${city}` : city) : "");
   return {
-    id, kind: k, status, city, hood, street, rooms, floor, sqm, features: feat, desc,
+    id, oldId, kind: k, status, city, hood, street, rooms, floor, sqm, features: feat, desc,
     photos: await photos(photoCell), date, order: i, title: title || city,
   };
 }
@@ -214,7 +224,7 @@ async function main() {
   const [propRows, reviewRows] = await Promise.all([sheet(GID_PROPS), sheet(GID_REVIEWS)]);
   let list = (await Promise.all(propRows.map(toListing))).filter(Boolean);
   const seen = new Map();
-  for (const l of list) { const n = (seen.get(l.id) || 0) + 1; seen.set(l.id, n); if (n > 1) l.id += "-" + n; }
+  for (const l of list) { const n = (seen.get(l.id) || 0) + 1; seen.set(l.id, n); if (n > 1) { l.id += "-" + n; l.oldId += "-" + n; } }
   // open listings first, newest first (by date, else lower in the sheet = newer)
   list.sort((a, b) => (a.kind === "closed") - (b.kind === "closed") || parseDate(b.date) - parseDate(a.date) || b.order - a.order);
   list = list.map(({ order, ...l }) => l);
@@ -228,7 +238,7 @@ async function main() {
   await writeIfChanged("data/reviews.json", JSON.stringify(reviews, null, 1) + "\n");
 
   // property pages: rewrite all, remove pages of listings that were deleted from the sheet
-  const ids = new Set(list.map(l => l.id));
+  const ids = new Set(list.flatMap(l => [l.id, l.oldId]));
   try {
     for (const d of await fs.readdir(path.join(ROOT, "n"))) {
       if (!ids.has(d)) { await fs.rm(path.join(ROOT, "n", d), { recursive: true, force: true }); console.log("  removed n/" + d); }
@@ -236,7 +246,9 @@ async function main() {
   } catch (_) {}
   for (const l of list) {
     const others = list.filter(o => o.id !== l.id && o.kind !== "closed");
-    await writeIfChanged(`n/${l.id}/index.html`, propertyPage(l, others));
+    const page = propertyPage(l, others);
+    await writeIfChanged(`n/${l.id}/index.html`, page);
+    if (l.oldId !== l.id) await writeIfChanged(`n/${l.oldId}/index.html`, page); // canonical points to the new link
   }
 
   const urls = [`${SITE}/`, ...list.map(pageUrl)];

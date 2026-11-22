@@ -62,10 +62,14 @@
     if (elevator === "יש") feat.push("מעלית");
     const pk = parking === "" ? "1" : parking;
     if (pk === "1") feat.push("חניה"); else if (pk !== "0") feat.push(`${pk} חניות`);
-    const id = (await sha1(`${city}|${street}|${floor}|${rooms}`)).slice(0, 6);
+    const key = `${city}|${street}|${floor}|${rooms}`;
+    let h = 5381;
+    for (let j = 0; j < key.length; j++) h = (h * 33 + key.charCodeAt(j)) % 2147483647;
+    const id = h.toString(36);
+    const oldId = (await sha1(key)).slice(0, 6);
     const title = (rooms ? `${rooms} חדרים${street ? ` ברחוב ${street}` : ""}` : (street ? `רחוב ${street}` : "")) + (city ? (rooms || street ? `, ${city}` : city) : "");
     const folder = (photoCell.match(/drive\.google\.com\/(?:drive\/(?:u\/\d+\/)?folders\/|open\?id=)([\w-]{10,})/) || [])[1] || "";
-    return { id, kind: k, status, city, hood, street, rooms, floor, sqm, features: feat, desc, photos: [], folder, date, order: i, title: title || city };
+    return { id, oldId, kind: k, status, city, hood, street, rooms, floor, sqm, features: feat, desc, photos: [], folder, date, order: i, title: title || city };
   }
 
   // Live rows from the sheet, with photos taken from the last build where it has them.
@@ -75,7 +79,7 @@
     try { rows = await sheet(GID_PROPS); } catch (e) { return builtP; }
     let list = (await Promise.all(rows.map(toListing))).filter(Boolean);
     const seen = new Map();
-    for (const l of list) { const n = (seen.get(l.id) || 0) + 1; seen.set(l.id, n); if (n > 1) l.id += "-" + n; }
+    for (const l of list) { const n = (seen.get(l.id) || 0) + 1; seen.set(l.id, n); if (n > 1) { l.id += "-" + n; l.oldId += "-" + n; } }
     list.sort((a, b) => (a.kind === "closed") - (b.kind === "closed") || parseDate(b.date) - parseDate(a.date) || b.order - a.order);
     const built = new Map((await builtP).map(b => [b.id, b]));
     return list.map(({ order, ...l }) => {
