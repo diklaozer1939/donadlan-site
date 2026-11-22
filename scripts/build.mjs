@@ -85,7 +85,7 @@ async function toListing(r, i) {
   const pk = parking === "" ? "1" : parking;
   if (pk === "1") feat.push("חניה"); else if (pk !== "0") feat.push(`${pk} חניות`);
   const id = crypto.createHash("sha1").update(`${city}|${street}|${floor}|${rooms}`).digest("hex").slice(0, 6);
-  const title = [rooms && `${rooms} חדרים`, street && `ברחוב ${street}`].filter(Boolean).join(" ") + (city ? `, ${city}` : "");
+  const title = (rooms ? `${rooms} חדרים${street ? ` ברחוב ${street}` : ""}` : (street ? `רחוב ${street}` : "")) + (city ? (rooms || street ? `, ${city}` : city) : "");
   return {
     id, kind: k, status, city, hood, street, rooms, floor, sqm, features: feat, desc,
     photos: await photos(photoCell), date, order: i, title: title || city,
@@ -115,10 +115,10 @@ function propertyPage(l, others) {
   const og = l.photos[0] || `${SITE}/img/og.jpg`;
   const waText = closed
     ? `היי דקלה, ראיתי באתר שמכרת/השכרת דירה ב${l.city}. יש לי דירה דומה ואשמח לשמוע ממך`
-    : `היי דקלה, ראיתי באתר את הדירה: ${l.title} (${l.status}). אשמח לפרטים ${pageUrl(l)}`;
+    : `היי דקלה, ראיתי באתר את הנכס: ${l.title} (${l.status}). אשמח לפרטים ${pageUrl(l)}`;
   const waLabel = closed ? "יש לכם דירה דומה? דברו איתי" : "לפרטים ומחיר בוואטסאפ";
   const gallery = l.photos.length
-    ? `<div class="gallery">${l.photos.map((p, i) => `<img src="${esc(p)}" alt="${esc(l.title)}, תמונה ${i + 1}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`).join("")}</div>
+    ? `<div class="gallery">${l.photos.map((p, i) => `<img referrerpolicy="no-referrer" src="${esc(p)}" alt="${esc(l.title)}, תמונה ${i + 1}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`).join("")}</div>
        ${l.photos.length > 1 ? `<p class="swipe">${l.photos.length} תמונות · החליקו לצד</p>` : ""}`
     : `<div class="gallery empty"><div class="ph"><img src="/img/mono.png" alt=""><b>${esc(l.city)}</b>${l.hood ? `<small>${esc(l.hood)}</small>` : ""}</div></div>`;
   const ld = {
@@ -129,7 +129,7 @@ function propertyPage(l, others) {
     provider: { "@type": "RealEstateAgent", name: 'דו נדל"ן – דקלה עוזר', telephone: "+972-55-883-6333", url: `${SITE}/` },
   };
   const more = others.slice(0, 3).map(o => `<a class="mini" href="/n/${o.id}/">
-      <span class="mini-pic">${o.photos[0] ? `<img src="${esc(o.photos[0].replace(/=w1600$/, "=w600"))}" alt="" loading="lazy">` : `<img class="mono" src="/img/mono.png" alt="">`}</span>
+      <span class="mini-pic">${o.photos[0] ? `<img referrerpolicy="no-referrer" src="${esc(o.photos[0].replace(/=w1600$/, "=w600"))}" alt="" loading="lazy">` : `<img class="mono" src="/img/mono.png" alt="">`}</span>
       <span class="mini-t"><b>${esc(o.title)}</b><small>${esc(o.status)}</small></span></a>`).join("");
 
   return `<!DOCTYPE html>
@@ -228,8 +228,8 @@ article{background:#fff;border:1px solid #E7DFCF;border-radius:14px;padding:16px
 article a{display:block;color:#8A6A22;font-size:14px;direction:ltr;text-align:right;word-break:break-all}
 textarea{width:100%;box-sizing:border-box;font:inherit;font-size:14px;border:1px solid #E7DFCF;border-radius:8px;padding:8px;resize:vertical}
 .b{display:flex;gap:8px;flex-wrap:wrap}
-button{font:inherit;font-size:15px;border:0;border-radius:999px;padding:10px 18px;background:#1F8A4C;color:#fff;cursor:pointer}
-button+button{background:#8A6A22}
+button{font:inherit;font-size:15px;border:0;border-radius:999px;padding:10px 18px;background:#D4147A;color:#fff;cursor:pointer}
+button+button{background:#121012}
 </style></head><body><main>
 <h1>קישורים לפרסום בפייסבוק</h1>
 <p class="s">הדף הזה לא מופיע באתר ולא בגוגל. הוא מתעדכן לבד מהגיליון.</p>
