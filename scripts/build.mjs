@@ -188,7 +188,9 @@ function propertyPage(l, others) {
 
 <footer><div class="wrap">© דו נדל"ן – דקלה עוזר · ${PHONE}</div></footer>
 <a class="sticky-wa" href="${esc(waLink(waText))}">${waLabel}</a>
+<script src="/js/gallery.js"></script>
 <script>
+dnGallery();
 document.querySelector(".share").addEventListener("click", async e => {
   const b = e.currentTarget, url = b.dataset.url, title = b.dataset.title;
   try { if (navigator.share) { await navigator.share({ title, url }); return; } } catch (_) { return; }

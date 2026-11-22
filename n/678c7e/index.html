@@ -72,7 +72,9 @@
 
 <footer><div class="wrap">© דו נדל"ן – דקלה עוזר · 055-8836333</div></footer>
 <a class="sticky-wa" href="https://wa.me/972558836333?text=%D7%94%D7%99%D7%99%20%D7%93%D7%A7%D7%9C%D7%94%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%A9%D7%9E%D7%9B%D7%A8%D7%AA%2F%D7%94%D7%A9%D7%9B%D7%A8%D7%AA%20%D7%93%D7%99%D7%A8%D7%94%20%D7%91%D7%99%D7%94%D7%95%D7%93.%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%93%D7%99%D7%A8%D7%94%20%D7%93%D7%95%D7%9E%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%9E%D7%9E%D7%9A">יש לכם דירה דומה? דברו איתי</a>
+<script src="/js/gallery.js"></script>
 <script>
+dnGallery();
 document.querySelector(".share").addEventListener("click", async e => {
   const b = e.currentTarget, url = b.dataset.url, title = b.dataset.title;
   try { if (navigator.share) { await navigator.share({ title, url }); return; } } catch (_) { return; }

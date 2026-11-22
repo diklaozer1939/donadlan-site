@@ -23,6 +23,7 @@
 <footer><div class="wrap">© דו נדל"ן – דקלה עוזר · 055-8836333</div></footer>
 <a class="sticky-wa" id="sticky" href="https://wa.me/972558836333">דברו איתי בוואטסאפ</a>
 <script src="/js/live.js"></script>
+<script src="/js/gallery.js"></script>
 <script>
 (async () => {
   const app = document.getElementById("app");
@@ -40,6 +41,7 @@
   if (!l) return notFound();
   document.title = `${l.status}: ${l.title} | דו נדל"ן`;
   app.innerHTML = DN.renderProperty(l, list.filter(o => o.id !== l.id && o.kind !== "closed"));
+  dnGallery(app);
   const s = document.getElementById("sticky");
   s.href = DN.waLink(DN.waText(l));
   s.textContent = l.kind === "closed" ? "יש לכם דירה דומה? דברו איתי" : "לפרטים ומחיר בוואטסאפ";
