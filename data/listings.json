@@ -1,28 +1,31 @@
 [
  {
-  "id": "n2tjpg",
-  "oldId": "772e15",
-  "kind": "sale",
-  "status": "למכירה",
-  "city": "רמת השרון",
-  "hood": "מורשה",
-  "street": "שבי ציון",
-  "rooms": "",
+  "id": "1k22is",
+  "oldId": "b64de8",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "פתח תקווה",
+  "hood": "",
+  "street": "צ'לנוב",
+  "rooms": "4",
   "floor": "",
-  "sqm": "340",
+  "sqm": "",
   "features": [
-   "חניה"
+   "מרפסת",
+   "ממ\"ד",
+   "מעלית"
   ],
-  "desc": "מגרש אחורי של כ-340 מ\"ר מתוך דו-משפחתי, פונה לנוף פתוח. אפשר לבנות מרתף ועוד 2 קומות.",
+  "desc": "4 חדרים מרווחת עם ממ\"ד ומרפסת שמש ארוכה שמשקיפה לרחוב ירוק. מטבח גדול עם פינת אוכל וחדר שינה מואר עם שני חלונות. לטווח ארוך.",
   "photos": [
-   "https://lh3.googleusercontent.com/d/1cnxHn8ZBGoxyRnP5yxxwwqLSLTcKbviJ=w1600",
-   "https://lh3.googleusercontent.com/d/1m8_2iguXeHrsDMQtg2uCE3Ur0y1n1tDv=w1600",
-   "https://lh3.googleusercontent.com/d/11SM4hZNDkc06nSEbTF7JJiH8Y6VvARgc=w1600",
-   "https://lh3.googleusercontent.com/d/1-Jy0diO1zQVp67YH35DXq0Uuv6cjY5og=w1600",
-   "https://lh3.googleusercontent.com/d/18_of9ytjA15DxYO3h_w1Swejpj6giZ-b=w1600"
+   "https://lh3.googleusercontent.com/d/1L9oIvbGCleND0F1hlmy7OxoMjKmknRDT=w1600",
+   "https://lh3.googleusercontent.com/d/1OP4-okvflKQwM9CCND4iAc1agUKhWLP-=w1600",
+   "https://lh3.googleusercontent.com/d/13O3sGyw3prmnntVkbUpwr3c6NXR4Fi_a=w1600",
+   "https://lh3.googleusercontent.com/d/18YU9hrZMGfwul1PJyKMXJcgVQBEksFgX=w1600",
+   "https://lh3.googleusercontent.com/d/1o06GqCmCE2f7AEIMaXytlT8ku5V74W5Q=w1600",
+   "https://lh3.googleusercontent.com/d/1aKyZRbM_GhmBaJE039xcNxepX68NKNiN=w1600"
   ],
-  "date": "",
-  "title": "רחוב שבי ציון, רמת השרון"
+  "date": "22.11.2026",
+  "title": "4 חדרים ברחוב צ'לנוב, פתח תקווה"
  },
  {
   "id": "tbu67l",
@@ -200,6 +203,31 @@
   ],
   "date": "",
   "title": "רחוב בן איש חי, אור יהודה"
+ },
+ {
+  "id": "n2tjpg",
+  "oldId": "772e15",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "רמת השרון",
+  "hood": "מורשה",
+  "street": "שבי ציון",
+  "rooms": "",
+  "floor": "",
+  "sqm": "340",
+  "features": [
+   "חניה"
+  ],
+  "desc": "מגרש אחורי של כ-340 מ\"ר מתוך דו-משפחתי, פונה לנוף פתוח. אפשר לבנות מרתף ועוד 2 קומות.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1cnxHn8ZBGoxyRnP5yxxwwqLSLTcKbviJ=w1600",
+   "https://lh3.googleusercontent.com/d/1m8_2iguXeHrsDMQtg2uCE3Ur0y1n1tDv=w1600",
+   "https://lh3.googleusercontent.com/d/11SM4hZNDkc06nSEbTF7JJiH8Y6VvARgc=w1600",
+   "https://lh3.googleusercontent.com/d/1-Jy0diO1zQVp67YH35DXq0Uuv6cjY5og=w1600",
+   "https://lh3.googleusercontent.com/d/18_of9ytjA15DxYO3h_w1Swejpj6giZ-b=w1600"
+  ],
+  "date": "",
+  "title": "רחוב שבי ציון, רמת השרון"
  },
  {
   "id": "qatf1r",
