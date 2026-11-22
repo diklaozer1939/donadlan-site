@@ -25,69 +25,6 @@
   "title": "רחוב שבי ציון, רמת השרון"
  },
  {
-  "id": "qp9gek",
-  "oldId": "db5049",
-  "kind": "sale",
-  "status": "למכירה",
-  "city": "קרית אונו",
-  "hood": "קראון",
-  "street": "הביטחון",
-  "rooms": "4",
-  "floor": "4",
-  "sqm": "120",
-  "features": [
-   "מרפסת",
-   "ממ\"ד",
-   "מחסן",
-   "מעלית"
-  ],
-  "desc": "4 חדרים בבניין אחרי תמ\"א, משופצת. מטבח פתוח לסלון, יחידת הורים גדולה ומרפסת של 14 מ\"ר לנוף פתוח.",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1FQzrU1tVkq6bWUuqvPIhUjt-AcakgU6s=w1600",
-   "https://lh3.googleusercontent.com/d/1h-l2h54i9yC-qzD9SRltlFe2iT84j_ns=w1600",
-   "https://lh3.googleusercontent.com/d/15OPy91nq56WbN7CJf5DhIQsQu9xvEVDB=w1600",
-   "https://lh3.googleusercontent.com/d/13AqPbTeyA-p6lgE97iaSBcMtjN2GRxeG=w1600",
-   "https://lh3.googleusercontent.com/d/1xuRnDA1Ttlukb-ukEQb8AECL-8JAT5LY=w1600",
-   "https://lh3.googleusercontent.com/d/1UwYE7nZb6LkAenFK8Pw9WPsVk_9vNcLZ=w1600",
-   "https://lh3.googleusercontent.com/d/1vpjqPdwYyeLgoLRBuWVHOBu1nFfRwOUg=w1600",
-   "https://lh3.googleusercontent.com/d/1V_zr3h5qv-8s4iuZp2lmdqQ3ouK5qxyz=w1600"
-  ],
-  "date": "",
-  "title": "4 חדרים ברחוב הביטחון, קרית אונו"
- },
- {
-  "id": "8xf6ns",
-  "oldId": "3074d6",
-  "kind": "rent",
-  "status": "להשכרה",
-  "city": "קרית אונו",
-  "hood": "קראון",
-  "street": "לוי אשכול",
-  "rooms": "4",
-  "floor": "15",
-  "sqm": "130",
-  "features": [
-   "מרפסת",
-   "ממ\"ד",
-   "מחסן",
-   "מעלית",
-   "חניה"
-  ],
-  "desc": "4 חדרים פונה מזרחה לנוף ירוק פתוח. חדר הורים מואר, חדר כביסה, ממ\"ד, חניה ומחסן.",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1q49i11oMRh3-M5izW7rsFTnWkwxwqhhd=w1600",
-   "https://lh3.googleusercontent.com/d/1GKHelWaxgkesoLEKDhD6xQDaR9hMTwnY=w1600",
-   "https://lh3.googleusercontent.com/d/1zrmI-01rP0xsjmsXZkvTWkscOBs9-B2i=w1600",
-   "https://lh3.googleusercontent.com/d/1zVkWppD7dqSl5LuzMITetvkUW_nq5t8S=w1600",
-   "https://lh3.googleusercontent.com/d/14PN5oA9ZZuSnNND-we7kluH2AGIpPGhj=w1600",
-   "https://lh3.googleusercontent.com/d/1XAODOcT_v7maRVHdNmZZMBHkgYm9kCiW=w1600",
-   "https://lh3.googleusercontent.com/d/11OBmwL6GSM28LVNi57DOhgz0AJJ3nUer=w1600",
-   "https://lh3.googleusercontent.com/d/1ldpffFoc_kKH00rAVk7myyRTBQvwBHb_=w1600"
-  ],
-  "date": "",
-  "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
- },
- {
   "id": "tbu67l",
   "oldId": "8ff47a",
   "kind": "rent",
@@ -114,6 +51,63 @@
    "https://lh3.googleusercontent.com/d/1lKoU9CK9vwgnQJBD5HZqLXwiPMR6JCHf=w1600",
    "https://lh3.googleusercontent.com/d/17Mv1Ndx-CLVBdaM3mZHuqnhSjo_16mYa=w1600",
    "https://lh3.googleusercontent.com/d/1wEYLoMSGmkDUrv6BLrq7X5j000uDVGQW=w1600"
+  ],
+  "date": "",
+  "title": "5 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "4h2rv4",
+  "oldId": "8df65e",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "גני תקווה",
+  "hood": "מרכז הישוב",
+  "street": "ים המלח",
+  "rooms": "3",
+  "floor": "0",
+  "sqm": "100",
+  "features": [
+   "מחסן",
+   "חניה"
+  ],
+  "desc": "בית ישן על מגרש של 1000 מ\"ר, 3 חדרים גדולים ומזגן בכל חדר. לטווח ארוך.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1toHUxNFEVob_ghBh_3tdNHLuEngwtZ-G=w1600",
+   "https://lh3.googleusercontent.com/d/1W01fjsMflss2qlQ1QGVyisf4Gbd1X6eG=w1600",
+   "https://lh3.googleusercontent.com/d/1yQzwOPTecPTzId3QRr8FR-tkCYkMQPQq=w1600",
+   "https://lh3.googleusercontent.com/d/1qdWGwL-R7CjoD95e1wZdw19oCOjfQtq9=w1600",
+   "https://lh3.googleusercontent.com/d/1SNAI8sX1AjS8o9D_boUZc0BhXJ_VxNYP=w1600"
+  ],
+  "date": "",
+  "title": "3 חדרים ברחוב ים המלח, גני תקווה"
+ },
+ {
+  "id": "8xf2gk",
+  "oldId": "1617c9",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "5",
+  "floor": "10",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "2 חניות"
+  ],
+  "desc": "5 חדרים בפרויקט עלמא, פונה מערבה לשקיעות ובריזה. מרפסת שמש של 15 מ\"ר, 2 חניות ומחסן.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1Rqj9dtIUSuBQChPyq_Jv12k9kWGN0zOj=w1600",
+   "https://lh3.googleusercontent.com/d/1CKhIofDiHwiyk1itBZkYTcL1iTYC8Yg3=w1600",
+   "https://lh3.googleusercontent.com/d/1S_5xC7O8iT8oY6CxEypV6T3uHhqEu-7U=w1600",
+   "https://lh3.googleusercontent.com/d/1DhzBon8aF-An67hxGamDDYN9XoyA0kIe=w1600",
+   "https://lh3.googleusercontent.com/d/1Rq3ZSfyxTLr-OsxyaMLh8V9Hjgrer65A=w1600",
+   "https://lh3.googleusercontent.com/d/1BDTa2CtRADFNzA9HN1kD75Kgzg2K35Vm=w1600",
+   "https://lh3.googleusercontent.com/d/1U0xzaK1zeJ8jGgbibmJLQG-0-h3NjmaB=w1600"
   ],
   "date": "",
   "title": "5 חדרים ברחוב לוי אשכול, קרית אונו"
@@ -149,35 +143,64 @@
   "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
  },
  {
-  "id": "8xf2gk",
-  "oldId": "1617c9",
+  "id": "8xf6ns",
+  "oldId": "3074d6",
   "kind": "rent",
   "status": "להשכרה",
   "city": "קרית אונו",
   "hood": "קראון",
   "street": "לוי אשכול",
-  "rooms": "5",
-  "floor": "10",
-  "sqm": "120",
+  "rooms": "4",
+  "floor": "15",
+  "sqm": "130",
   "features": [
    "מרפסת",
    "ממ\"ד",
    "מחסן",
    "מעלית",
-   "2 חניות"
+   "חניה"
   ],
-  "desc": "5 חדרים בפרויקט עלמא, פונה מערבה לשקיעות ובריזה. מרפסת שמש של 15 מ\"ר, 2 חניות ומחסן.",
+  "desc": "4 חדרים פונה מזרחה לנוף ירוק פתוח. חדר הורים מואר, חדר כביסה, ממ\"ד, חניה ומחסן.",
   "photos": [
-   "https://lh3.googleusercontent.com/d/1Rqj9dtIUSuBQChPyq_Jv12k9kWGN0zOj=w1600",
-   "https://lh3.googleusercontent.com/d/1CKhIofDiHwiyk1itBZkYTcL1iTYC8Yg3=w1600",
-   "https://lh3.googleusercontent.com/d/1S_5xC7O8iT8oY6CxEypV6T3uHhqEu-7U=w1600",
-   "https://lh3.googleusercontent.com/d/1DhzBon8aF-An67hxGamDDYN9XoyA0kIe=w1600",
-   "https://lh3.googleusercontent.com/d/1Rq3ZSfyxTLr-OsxyaMLh8V9Hjgrer65A=w1600",
-   "https://lh3.googleusercontent.com/d/1BDTa2CtRADFNzA9HN1kD75Kgzg2K35Vm=w1600",
-   "https://lh3.googleusercontent.com/d/1U0xzaK1zeJ8jGgbibmJLQG-0-h3NjmaB=w1600"
+   "https://lh3.googleusercontent.com/d/1q49i11oMRh3-M5izW7rsFTnWkwxwqhhd=w1600",
+   "https://lh3.googleusercontent.com/d/1GKHelWaxgkesoLEKDhD6xQDaR9hMTwnY=w1600",
+   "https://lh3.googleusercontent.com/d/1zrmI-01rP0xsjmsXZkvTWkscOBs9-B2i=w1600",
+   "https://lh3.googleusercontent.com/d/1zVkWppD7dqSl5LuzMITetvkUW_nq5t8S=w1600",
+   "https://lh3.googleusercontent.com/d/14PN5oA9ZZuSnNND-we7kluH2AGIpPGhj=w1600",
+   "https://lh3.googleusercontent.com/d/1XAODOcT_v7maRVHdNmZZMBHkgYm9kCiW=w1600",
+   "https://lh3.googleusercontent.com/d/11OBmwL6GSM28LVNi57DOhgz0AJJ3nUer=w1600",
+   "https://lh3.googleusercontent.com/d/1ldpffFoc_kKH00rAVk7myyRTBQvwBHb_=w1600"
   ],
   "date": "",
-  "title": "5 חדרים ברחוב לוי אשכול, קרית אונו"
+  "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "lztml6",
+  "oldId": "5ee59b",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "אור יהודה",
+  "hood": "רמת פנקס",
+  "street": "בן איש חי",
+  "rooms": "",
+  "floor": "",
+  "sqm": "490",
+  "features": [
+   "חניה"
+  ],
+  "desc": "מגרש נדיר עם בית ישן ברמת פנקס, בשכונה שקטה. כ-490 מ\"ר, אפשר לבנות 2 יחידות עם מרתף.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1b7F_R9Zoo1h8DYMoyKz56qdujZu8faAg=w1600",
+   "https://lh3.googleusercontent.com/d/1W0O3CiBmAHkRfpkmhy7_ScVWyiRQ2CQf=w1600",
+   "https://lh3.googleusercontent.com/d/1Snlbt8AN0h1IhgrarzVefVPLDukC4CUu=w1600",
+   "https://lh3.googleusercontent.com/d/1rOL4pvmMMHIEZlX45sibKMz6m04xfJx9=w1600",
+   "https://lh3.googleusercontent.com/d/1hpgIaoapJo3KijVNxbocJgkFZc9GgAkk=w1600",
+   "https://lh3.googleusercontent.com/d/1N930iO31SCpGVyS6J7DO3T-3_dG34Ac4=w1600",
+   "https://lh3.googleusercontent.com/d/1fsXMRDYiwO-Z9-Q9vp6Wi5LgTItLUQL2=w1600",
+   "https://lh3.googleusercontent.com/d/1B5YotV31v_ZVcFQybvkMw3aC1LzB8082=w1600"
+  ],
+  "date": "",
+  "title": "רחוב בן איש חי, אור יהודה"
  },
  {
   "id": "qatf1r",
@@ -208,6 +231,37 @@
   "title": "4 חדרים ברחוב חפץ חיים, פתח תקווה"
  },
  {
+  "id": "qp9gek",
+  "oldId": "db5049",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "הביטחון",
+  "rooms": "4",
+  "floor": "4",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית"
+  ],
+  "desc": "4 חדרים בבניין אחרי תמ\"א, משופצת. מטבח פתוח לסלון, יחידת הורים גדולה ומרפסת של 14 מ\"ר לנוף פתוח.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1FQzrU1tVkq6bWUuqvPIhUjt-AcakgU6s=w1600",
+   "https://lh3.googleusercontent.com/d/1h-l2h54i9yC-qzD9SRltlFe2iT84j_ns=w1600",
+   "https://lh3.googleusercontent.com/d/15OPy91nq56WbN7CJf5DhIQsQu9xvEVDB=w1600",
+   "https://lh3.googleusercontent.com/d/13AqPbTeyA-p6lgE97iaSBcMtjN2GRxeG=w1600",
+   "https://lh3.googleusercontent.com/d/1xuRnDA1Ttlukb-ukEQb8AECL-8JAT5LY=w1600",
+   "https://lh3.googleusercontent.com/d/1UwYE7nZb6LkAenFK8Pw9WPsVk_9vNcLZ=w1600",
+   "https://lh3.googleusercontent.com/d/1vpjqPdwYyeLgoLRBuWVHOBu1nFfRwOUg=w1600",
+   "https://lh3.googleusercontent.com/d/1V_zr3h5qv-8s4iuZp2lmdqQ3ouK5qxyz=w1600"
+  ],
+  "date": "",
+  "title": "4 חדרים ברחוב הביטחון, קרית אונו"
+ },
+ {
   "id": "ro1638",
   "oldId": "ff2927",
   "kind": "sale",
@@ -233,60 +287,6 @@
   ],
   "date": "",
   "title": "6 חדרים ברחוב זליג בס, פתח תקווה"
- },
- {
-  "id": "4h2rv4",
-  "oldId": "8df65e",
-  "kind": "rent",
-  "status": "להשכרה",
-  "city": "גני תקווה",
-  "hood": "מרכז הישוב",
-  "street": "ים המלח",
-  "rooms": "3",
-  "floor": "0",
-  "sqm": "100",
-  "features": [
-   "מחסן",
-   "חניה"
-  ],
-  "desc": "בית ישן על מגרש של 1000 מ\"ר, 3 חדרים גדולים ומזגן בכל חדר. לטווח ארוך.",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1toHUxNFEVob_ghBh_3tdNHLuEngwtZ-G=w1600",
-   "https://lh3.googleusercontent.com/d/1W01fjsMflss2qlQ1QGVyisf4Gbd1X6eG=w1600",
-   "https://lh3.googleusercontent.com/d/1yQzwOPTecPTzId3QRr8FR-tkCYkMQPQq=w1600",
-   "https://lh3.googleusercontent.com/d/1qdWGwL-R7CjoD95e1wZdw19oCOjfQtq9=w1600",
-   "https://lh3.googleusercontent.com/d/1SNAI8sX1AjS8o9D_boUZc0BhXJ_VxNYP=w1600"
-  ],
-  "date": "",
-  "title": "3 חדרים ברחוב ים המלח, גני תקווה"
- },
- {
-  "id": "lztml6",
-  "oldId": "5ee59b",
-  "kind": "sale",
-  "status": "למכירה",
-  "city": "אור יהודה",
-  "hood": "רמת פנקס",
-  "street": "בן איש חי",
-  "rooms": "",
-  "floor": "",
-  "sqm": "490",
-  "features": [
-   "חניה"
-  ],
-  "desc": "מגרש נדיר עם בית ישן ברמת פנקס, בשכונה שקטה. כ-490 מ\"ר, אפשר לבנות 2 יחידות עם מרתף.",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1b7F_R9Zoo1h8DYMoyKz56qdujZu8faAg=w1600",
-   "https://lh3.googleusercontent.com/d/1W0O3CiBmAHkRfpkmhy7_ScVWyiRQ2CQf=w1600",
-   "https://lh3.googleusercontent.com/d/1Snlbt8AN0h1IhgrarzVefVPLDukC4CUu=w1600",
-   "https://lh3.googleusercontent.com/d/1rOL4pvmMMHIEZlX45sibKMz6m04xfJx9=w1600",
-   "https://lh3.googleusercontent.com/d/1hpgIaoapJo3KijVNxbocJgkFZc9GgAkk=w1600",
-   "https://lh3.googleusercontent.com/d/1N930iO31SCpGVyS6J7DO3T-3_dG34Ac4=w1600",
-   "https://lh3.googleusercontent.com/d/1fsXMRDYiwO-Z9-Q9vp6Wi5LgTItLUQL2=w1600",
-   "https://lh3.googleusercontent.com/d/1B5YotV31v_ZVcFQybvkMw3aC1LzB8082=w1600"
-  ],
-  "date": "",
-  "title": "רחוב בן איש חי, אור יהודה"
  },
  {
   "id": "efm1di",
