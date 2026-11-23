@@ -152,6 +152,7 @@ function propertyPage(l, others) {
 <link rel="stylesheet" href="/css/property.css">
 <link rel="stylesheet" href="/css/a11y.css">
 <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>
+<script src="/js/pixel.js" async></script>
 </head>
 <body>
 <a class="skip" href="#content">דילוג לתוכן הראשי</a>
