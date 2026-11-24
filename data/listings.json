@@ -1,31 +1,35 @@
 [
  {
-  "id": "fvalx3",
-  "oldId": "6bb3de",
-  "kind": "rent",
-  "status": "להשכרה",
-  "city": "פתח תקווה",
-  "hood": "קרית חזני",
-  "street": "צ'לנוב",
-  "rooms": "4",
-  "floor": "2",
-  "sqm": "90",
+  "id": "12eowt",
+  "oldId": "a194b3",
+  "kind": "sale",
+  "status": "למכירה",
+  "city": "ראש העין",
+  "hood": "גבעת הסלעים",
+  "street": "דרך הציונות 5",
+  "rooms": "4.5",
+  "floor": "3",
+  "sqm": "150",
   "features": [
    "מרפסת",
-   "ממ\"ד",
-   "מעלית"
+   "חניה"
   ],
-  "desc": "דירת 4 חדרים מרווחת עם ממ\"ד ומרפסת שמש ארוכה ומפנקת. מטבח גדול עם פינת אוכל וחדר שינה מואר עם שני חלונות. לטווח ארוך.",
+  "desc": "בשכונת גבעת הסלעים הוותיקה בראש העין, למכירה דירת דופלקס עם נוף פתוח וגג מטורף.  מעולה למשקיעים",
   "photos": [
-   "https://lh3.googleusercontent.com/d/1L9oIvbGCleND0F1hlmy7OxoMjKmknRDT=w1600",
-   "https://lh3.googleusercontent.com/d/1OP4-okvflKQwM9CCND4iAc1agUKhWLP-=w1600",
-   "https://lh3.googleusercontent.com/d/13O3sGyw3prmnntVkbUpwr3c6NXR4Fi_a=w1600",
-   "https://lh3.googleusercontent.com/d/18YU9hrZMGfwul1PJyKMXJcgVQBEksFgX=w1600",
-   "https://lh3.googleusercontent.com/d/1o06GqCmCE2f7AEIMaXytlT8ku5V74W5Q=w1600",
-   "https://lh3.googleusercontent.com/d/1aKyZRbM_GhmBaJE039xcNxepX68NKNiN=w1600"
+   "https://lh3.googleusercontent.com/d/1A2q1iK1_UmLQP4QWd7LqN4EkjGmeyB3F=w1600",
+   "https://lh3.googleusercontent.com/d/1fI2zx5NgsfKvujxfmCjTBQ1lEmNacY_M=w1600",
+   "https://lh3.googleusercontent.com/d/1x33VDSxBJMIxXKmbW9NWMzCXy2joxeT3=w1600",
+   "https://lh3.googleusercontent.com/d/1tcio3KQpsiWVrkFFkSamJLB-Pilq9pV3=w1600",
+   "https://lh3.googleusercontent.com/d/1EIYQRwKbpIWVDjnZdtZ1TFb73UdIXJsa=w1600",
+   "https://lh3.googleusercontent.com/d/1jYsWRpXhUUzBt6CGnNJxoGsGOoGTKgX1=w1600",
+   "https://lh3.googleusercontent.com/d/1cPMSlR9MVHRNX4m0GhPb-SEw2G0dJ5wl=w1600",
+   "https://lh3.googleusercontent.com/d/1V6mTlxYREit86fuWGHQpM02QESvxq0TW=w1600",
+   "https://lh3.googleusercontent.com/d/1243v5SbQoF1HkNlZbdUOHWkqJFJ3vFYK=w1600",
+   "https://lh3.googleusercontent.com/d/1vWkCLTjS3RzUzJSGsMfqvw_INjCprrL4=w1600",
+   "https://lh3.googleusercontent.com/d/1Xx-PHaIVzTDlxxRTERvt76Yq17t1glWd=w1600"
   ],
-  "date": "22.11.2026",
-  "title": "4 חדרים ברחוב צ'לנוב, פתח תקווה"
+  "date": "24.11.2026",
+  "title": "4.5 חדרים ברחוב דרך הציונות 5, ראש העין"
  },
  {
   "id": "tbu67l",
@@ -175,6 +179,34 @@
   ],
   "date": "",
   "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
+ },
+ {
+  "id": "fvalx3",
+  "oldId": "6bb3de",
+  "kind": "rent",
+  "status": "להשכרה",
+  "city": "פתח תקווה",
+  "hood": "קרית חזני",
+  "street": "צ'לנוב",
+  "rooms": "4",
+  "floor": "2",
+  "sqm": "90",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מעלית"
+  ],
+  "desc": "דירת 4 חדרים מרווחת עם ממ\"ד ומרפסת שמש ארוכה ומפנקת. מטבח גדול עם פינת אוכל וחדר שינה מואר עם שני חלונות. לטווח ארוך.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1L9oIvbGCleND0F1hlmy7OxoMjKmknRDT=w1600",
+   "https://lh3.googleusercontent.com/d/1OP4-okvflKQwM9CCND4iAc1agUKhWLP-=w1600",
+   "https://lh3.googleusercontent.com/d/13O3sGyw3prmnntVkbUpwr3c6NXR4Fi_a=w1600",
+   "https://lh3.googleusercontent.com/d/18YU9hrZMGfwul1PJyKMXJcgVQBEksFgX=w1600",
+   "https://lh3.googleusercontent.com/d/1o06GqCmCE2f7AEIMaXytlT8ku5V74W5Q=w1600",
+   "https://lh3.googleusercontent.com/d/1aKyZRbM_GhmBaJE039xcNxepX68NKNiN=w1600"
+  ],
+  "date": "22.11.2026",
+  "title": "4 חדרים ברחוב צ'לנוב, פתח תקווה"
  },
  {
   "id": "lztml6",
