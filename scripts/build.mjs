@@ -145,6 +145,7 @@ function propertyPage(l, others) {
 <meta property="og:url" content="${pageUrl(l)}">
 <meta property="og:image" content="${esc(og)}">
 <meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="דו נדל&quot;ן Do nadlan">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
@@ -189,7 +190,7 @@ function propertyPage(l, others) {
     <img src="/img/dikla.jpg" alt="דקלה עוזר" width="720" height="1079" loading="lazy">
     <div>
       <b>דקלה עוזר</b>
-      <p>בעלת Do nadlan, משרד תיווך בוטיק. מלווה מכירה, קנייה והשכרה בפתח תקווה, בקעת אונו והסביבה, עם הקשבה, אמינות והבנה אמיתית של מה שחשוב לכם.</p>
+      <p>בעלת דו נדל"ן (Do nadlan), משרד תיווך בוטיק. מלווה מכירה, קנייה והשכרה בפתח תקווה, בקעת אונו והסביבה, עם הקשבה, אמינות והבנה אמיתית של מה שחשוב לכם.</p>
       <small>מתווכת מוסמכת · רישיון 30675094</small>
     </div>
   </section>
