@@ -65,7 +65,9 @@
     const key = `${city}|${street}|${floor}|${rooms}`;
     let h = 5381;
     for (let j = 0; j < key.length; j++) h = (h * 33 + key.charCodeAt(j)) % 2147483647;
-    const id = h.toString(36);
+    // links already shared before a detail in the key changed (same map in scripts/build.mjs)
+    const KEEP_LINK = { "ראש העין|דרך הציונות 5|2-3|4.5": "12eowt" };
+    const id = KEEP_LINK[key] || h.toString(36);
     const oldId = (await sha1(key)).slice(0, 6);
     const title = (rooms ? `${rooms} חדרים${street ? ` ברחוב ${street}` : ""}` : (street ? `רחוב ${street}` : "")) + (city ? (rooms || street ? `, ${city}` : city) : "");
     const folder = (photoCell.match(/drive\.google\.com\/(?:drive\/(?:u\/\d+\/)?folders\/|open\?id=)([\w-]{10,})/) || [])[1] || "";

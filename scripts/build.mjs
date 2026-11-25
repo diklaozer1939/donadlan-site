@@ -38,7 +38,10 @@ async function sheet(gid) {
 
 // Same hash as the formula in the sheet's link column (keep the two in step):
 // REDUCE(5381, ..., MOD(a*33 + UNICODE(char), 2147483647)), written in base 36.
+// Links already shared before a detail in the key changed: new key -> the link to keep (same map in js/live.js)
+const KEEP_LINK = { "ראש העין|דרך הציונות 5|2-3|4.5": "12eowt" };
 function linkId(key) {
+  if (KEEP_LINK[key]) return KEEP_LINK[key];
   let a = 5381;
   for (let i = 0; i < key.length; i++) a = (a * 33 + key.charCodeAt(i)) % 2147483647;
   return a.toString(36);
