@@ -51,8 +51,11 @@
   }
 
   async function toListing(r, i) {
-    const [status, city, hood, street, rooms, floor, sqm, balcony, parking, elevator, mamad, storage, desc, photoCell, date] =
+    let [status, city, hood, street, rooms, floor, sqm, balcony, parking, elevator, mamad, storage, desc, photoCell, date] =
       Array.from({ length: 15 }, (_, k) => clean(r[k]));
+    // text floors such as "2-3" are dropped by the sheet's QUERY (same map in scripts/build.mjs)
+    const FLOOR_FIX = { "דרך הציונות 5|4.5": "2-3" };
+    if (!floor && FLOOR_FIX[`${street}|${rooms}`]) floor = FLOOR_FIX[`${street}|${rooms}`];
     const k = kind(status);
     if (k === "other") return null;
     const feat = [];

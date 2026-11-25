@@ -40,6 +40,9 @@ async function sheet(gid) {
 // REDUCE(5381, ..., MOD(a*33 + UNICODE(char), 2147483647)), written in base 36.
 // Links already shared before a detail in the key changed: new key -> the link to keep (same map in js/live.js)
 const KEEP_LINK = { "ראש העין|דרך הציונות 5|2-3|4.5": "12eowt" };
+// The QUERY in site_properties drops text floors such as "2-3" (the column is numeric), so they are filled in here
+// until the formula is changed to keep text: street|rooms -> floor (same map in js/live.js)
+const FLOOR_FIX = { "דרך הציונות 5|4.5": "2-3" };
 function linkId(key) {
   if (KEEP_LINK[key]) return KEEP_LINK[key];
   let a = 5381;
@@ -85,8 +88,9 @@ function parseDate(s) {
 }
 
 async function toListing(r, i) {
-  const [status, city, hood, street, rooms, floor, sqm, balcony, parking, elevator, mamad, storage, desc, photoCell, date] =
+  let [status, city, hood, street, rooms, floor, sqm, balcony, parking, elevator, mamad, storage, desc, photoCell, date] =
     Array.from({ length: 15 }, (_, k) => clean(r[k]));
+  if (!floor && FLOOR_FIX[`${street}|${rooms}`]) floor = FLOOR_FIX[`${street}|${rooms}`];
   const k = kind(status);
   if (k === "other") return null;
   const feat = [];
