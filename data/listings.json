@@ -119,36 +119,6 @@
   "title": "5 חדרים ברחוב לוי אשכול, קרית אונו"
  },
  {
-  "id": "8xf451",
-  "oldId": "6bb46e",
-  "kind": "rent",
-  "status": "להשכרה",
-  "city": "קרית אונו",
-  "hood": "קראון",
-  "street": "לוי אשכול",
-  "rooms": "4",
-  "floor": "12",
-  "sqm": "120",
-  "features": [
-   "מרפסת",
-   "ממ\"ד",
-   "מחסן",
-   "מעלית",
-   "חניה"
-  ],
-  "desc": "4 חדרים חדשה עם סלון גדול מאוד ומרפסת שמש מזרחה, לכיוון סביון. לטווח ארוך.",
-  "photos": [
-   "https://lh3.googleusercontent.com/d/1v5XXNNHsPPnUCGdPnZ9K9n-lbHuL4oBE=w1600",
-   "https://lh3.googleusercontent.com/d/1ITnJz7wl16EmhWFkx9UYKLxSy0_Pvmcm=w1600",
-   "https://lh3.googleusercontent.com/d/1d9nsZZviLDoolcZW5QpHXyrK_FUq0egQ=w1600",
-   "https://lh3.googleusercontent.com/d/1rcJI40AbOQet3gZrjqNJouwTLeMA0ukK=w1600",
-   "https://lh3.googleusercontent.com/d/1rwvVuMDHq8RJdiqGdltauo5sZwz-qfoF=w1600",
-   "https://lh3.googleusercontent.com/d/13wi0gR2o5vKKDXi2Ok4VbpegLpmpENA_=w1600"
-  ],
-  "date": "",
-  "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
- },
- {
   "id": "8xf6ns",
   "oldId": "3074d6",
   "kind": "rent",
@@ -346,6 +316,36 @@
   ],
   "date": "",
   "title": "6 חדרים ברחוב זליג בס, פתח תקווה"
+ },
+ {
+  "id": "8xf451",
+  "oldId": "6bb46e",
+  "kind": "closed",
+  "status": "הושכר",
+  "city": "קרית אונו",
+  "hood": "קראון",
+  "street": "לוי אשכול",
+  "rooms": "4",
+  "floor": "12",
+  "sqm": "120",
+  "features": [
+   "מרפסת",
+   "ממ\"ד",
+   "מחסן",
+   "מעלית",
+   "חניה"
+  ],
+  "desc": "4 חדרים חדשה עם סלון גדול מאוד ומרפסת שמש מזרחה, לכיוון סביון. לטווח ארוך.",
+  "photos": [
+   "https://lh3.googleusercontent.com/d/1v5XXNNHsPPnUCGdPnZ9K9n-lbHuL4oBE=w1600",
+   "https://lh3.googleusercontent.com/d/1ITnJz7wl16EmhWFkx9UYKLxSy0_Pvmcm=w1600",
+   "https://lh3.googleusercontent.com/d/1d9nsZZviLDoolcZW5QpHXyrK_FUq0egQ=w1600",
+   "https://lh3.googleusercontent.com/d/1rcJI40AbOQet3gZrjqNJouwTLeMA0ukK=w1600",
+   "https://lh3.googleusercontent.com/d/1rwvVuMDHq8RJdiqGdltauo5sZwz-qfoF=w1600",
+   "https://lh3.googleusercontent.com/d/13wi0gR2o5vKKDXi2Ok4VbpegLpmpENA_=w1600"
+  ],
+  "date": "26.11.2026",
+  "title": "4 חדרים ברחוב לוי אשכול, קרית אונו"
  },
  {
   "id": "efm1di",
